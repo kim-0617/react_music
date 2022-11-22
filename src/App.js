@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { HeaderCont, FooterCont } from "./components";
+
+import {
+  TagSearch,
+  ThemaSearch,
+  MainConts,
+  ArtistSearch,
+  ArtistView,
+  ThemaSearchDetail,
+} from "./pages";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <HeaderCont />
+      <Routes>
+        <Route path="/" element={<MainConts />}></Route>
+        <Route path="/tagSearch" element={<TagSearch />}></Route>
+        <Route path="/themaSearch" element={<ThemaSearch />}></Route>
+        <Route
+          path="/themaSearchDetail"
+          element={<ThemaSearchDetail />}
+        ></Route>
+        <Route path="/artistSearch" element={<ArtistSearch />}></Route>
+        <Route path="/artistView" element={<ArtistView />}></Route>
+      </Routes>
+      <FooterCont />
+    </BrowserRouter>
   );
 }
 

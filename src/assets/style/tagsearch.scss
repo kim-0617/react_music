@@ -1,0 +1,325 @@
+/** @format */
+
+#tag__search {
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 1px;
+		background-color: var(--main-color);
+		display: inline-block;
+		position: absolute;
+		top: 53px;
+	}
+}
+
+.tag__inner {
+	font-family: var(--font-main);
+	font-weight: 800;
+	margin-top: 175px;
+	position: relative;
+
+	.title {
+		font-size: 22px;
+		color: var(--white);
+		padding: 12px 31px 10px 31px;
+		background-color: var(--main-color);
+		display: inline-block;
+		margin-bottom: 23px;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	.tag__search {
+		.tag__input {
+			position: relative;
+
+			input {
+				width: 100%;
+				border-radius: 20px;
+				padding: 12px 0px 12px 60px;
+				display: inline-block;
+				font-family: var(--font-main);
+				margin-bottom: 37px;
+				outline-color: var(--main-color);
+				background-color: transparent;
+				border: 1px solid var(--main-color);
+			}
+
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				top: 12px;
+				left: 20px;
+				background: url("../img/search_icon.svg") no-repeat center/cover;
+			}
+		}
+
+		.tag__list {
+			text-align: center;
+			margin-bottom: 23px;
+
+			li {
+				display: inline-block;
+				background-color: var(--white);
+				border-radius: 10px;
+				margin-right: 30px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&.active {
+					background-color: var(--main-color);
+
+					a {
+						color: var(--white);
+					}
+				}
+
+				a {
+					font-size: 14px;
+					display: inline-block;
+					padding: 8px 18px 5px 15px;
+					color: var(--font-colorSub2);
+
+					em {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+
+		.tag__list__detail {
+			border: 1px dashed var(--font-colorSub2);
+			border-radius: 10px;
+			text-align: center;
+			padding: 23px 0;
+			margin-bottom: 120px;
+
+			li {
+				display: inline-block;
+				margin-right: 20px;
+
+				a {
+					color: #f5f5f5;
+				}
+			}
+		}
+	}
+
+	.volume {
+		position: absolute;
+		top: 346px;
+		left: 3%;
+		margin: 0 auto;
+		width: 7%;
+		height: 5px;
+		background: #e5e5e5;
+		border-radius: 5px;
+		cursor: pointer;
+
+		.bar {
+			position: relative;
+			z-index: 2;
+			width: 50%;
+			height: 5px;
+			border-radius: 5px;
+			background: #02ee9f;
+
+			.bar__btn {
+				position: absolute;
+				top: 2px;
+				left: 100%;
+				transform: translate(-50%, -50%);
+				width: 10px;
+				height: 10px;
+				background: #02ee9f;
+				border-radius: 50%;
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -35px;
+			top: -10px;
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			background: url("../img/VolumeUp.svg") no-repeat center/cover;
+		}
+	}
+
+	.tag__box {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #1f1f1f;
+		padding-bottom: 15px;
+		font-family: var(--font-korSub);
+		font-weight: 300;
+		transition: all 0.3s;
+		border-bottom: 1px solid #1f1f1f;
+		padding: 12px 10px;
+		&:hover {
+			background: #252525;
+			backdrop-filter: blur(10px);
+			border-radius: 5px;
+		}
+
+		> img {
+			width: 9%;
+			object-fit: cover;
+			margin-right: 15px;
+		}
+
+		.tag__duration {
+			width: 40%;
+			font-family: var(--font-korSub);
+
+			.duration__top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				img {
+					display: block;
+					width: 15%;
+					height: 50px;
+					margin-right: -15px;
+				}
+
+				.duration__time {
+					width: 13%;
+				}
+			}
+
+			.duration__bot {
+				margin-top: 30px;
+				margin-left: 15px;
+
+				span {
+					color: var(--main-color);
+				}
+			}
+		}
+
+		.tag__tags {
+			width: 30%;
+
+			ul {
+				text-align: center;
+
+				li {
+					display: inline-block;
+					margin-right: 20px;
+					margin-top: 15px;
+
+					a {
+						display: inline-block;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.tag__icon {
+			width: 20%;
+			margin-top: 15px;
+			text-align: center;
+
+			.play {
+				width: 26px;
+				height: 26px;
+				display: inline-block;
+				background: url("../img/Artist.svg") no-repeat center/cover;
+				margin-right: 15px;
+			}
+
+			.stop {
+				width: 26px;
+				height: 26px;
+				display: inline-block;
+				background: url("../img/Mute.svg") no-repeat center/cover;
+				margin-right: 15px;
+			}
+
+			.youtube {
+				width: 35px;
+				height: 26px;
+				display: inline-block;
+				background: url("../img/Vector.svg") no-repeat center/cover;
+			}
+		}
+	}
+}
+
+.progress {
+	position: relative;
+	margin: 0 auto;
+	width: 66%;
+	height: 5px;
+	background: #e5e5e5;
+	border-radius: 5px;
+	cursor: pointer;
+
+	.bar {
+		position: relative;
+		z-index: 2;
+		width: 50%;
+		height: 5px;
+		border-radius: 5px;
+		background: #02ee9f;
+
+		.bar__btn {
+			position: absolute;
+			top: 2px;
+			left: 100%;
+			transform: translate(-50%, -50%);
+			width: 16px;
+			height: 16px;
+			background: #02ee9f;
+			border-radius: 50%;
+		}
+	}
+}
+
+.pagenation {
+	margin-top: 75px;
+
+	ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+			border: 1px solid var(--font-colorSub2);
+			margin-right: 5px;
+			border-radius: 5px;
+			width: 40px;
+			transition: all 0.3s;
+
+			a {
+				display: inline-block;
+				padding: 5px 10px;
+				color: var(--font-colorSub2);
+			}
+
+			&.next,
+			&.prev {
+				background-color: #ccc;
+			}
+			&:hover {
+				border: 1px solid #fff;
+			}
+
+			&.active {
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

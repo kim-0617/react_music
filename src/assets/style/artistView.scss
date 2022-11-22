@@ -1,0 +1,94 @@
+/** @format */
+
+#artist__view {
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 1px;
+		background-color: var(--main-color);
+		display: inline-block;
+		position: absolute;
+		top: 53px;
+	}
+	.artist__play {
+		margin-top: 100px;
+		h3 {
+			font-weight: 800;
+			font-size: 24px;
+			margin-bottom: 50px;
+		}
+		.cont__main {
+			width: 100%;
+			height: inherit;
+			.view__desc {
+				margin-top: 40px;
+				.view__title {
+					font-weight: 800;
+					font-size: 24px;
+					margin-bottom: 20px;
+				}
+				.view__channel {
+					color: var(--main-color);
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.cont__sub {
+		margin-top: 50px;
+		margin-bottom: 120px;
+		.swiper {
+			width: 100%;
+			height: 300px;
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				img {
+					display: block;
+					width: 100%;
+					height: 75%;
+					object-fit: cover;
+					border-radius: 10px;
+				}
+				em {
+					display: block;
+					text-align-last: left;
+					margin-top: 20px;
+					font-family: var(--font-korSub);
+					width: 250px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+			.swiper-button-next {
+				background: url(../img/slider_rigth.svg) !important;
+				width: 95px;
+				height: 95px;
+				top: 30% !important;
+				right: -20px !important;
+				&::after {
+					display: none;
+				}
+			}
+			.swiper-button-prev {
+				background: url(../img/slider_left.svg) !important;
+				width: 95px;
+				height: 95px;
+				top: 30% !important;
+				left: -20px !important;
+				&::after {
+					display: none;
+				}
+			}
+		}
+		.swiper-pagination {
+			bottom: 0 !important;
+			.swiper-pagination-bullet {
+				background: #fff;
+			}
+		}
+	}
+}

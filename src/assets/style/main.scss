@@ -1,0 +1,340 @@
+/** @format */
+
+#main {
+	/* 메인 페이지 top */
+	#youtube__recom {
+		margin-top: 140px;
+		.main__title {
+			text-align: center;
+			font-weight: 700;
+			font-size: 38px;
+			font-family: var(--font-Eng);
+			position: relative;
+			margin-bottom: 24px;
+			em {
+				color: var(--main-color);
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				bottom: -10px;
+				width: 50px;
+				height: 2px;
+				background: var(--main-color);
+				transform: translate(-50%, -50%);
+			}
+		}
+		.main__sub {
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 400;
+			margin-bottom: 70px;
+			em {
+				color: var(--main-color);
+			}
+		}
+		.main__youtube__music {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+			.player__left {
+				width: 60%;
+				img {
+					width: 100%;
+					border-radius: 10px;
+				}
+			}
+			.player__right {
+				width: 35%;
+				text-align: center;
+				.you__title {
+					font-family: var(--font-Eng);
+					font-weight: 700;
+					font-size: 24px;
+					margin-bottom: 20px;
+					img {
+						width: 16px;
+						height: 16px;
+						vertical-align: -1px;
+						margin-right: 5px;
+					}
+				}
+				h3 {
+					font-weight: 700;
+					font-size: 22px;
+					margin-bottom: 24px;
+				}
+				em {
+					font-weight: 700;
+					font-size: 18px;
+					margin-bottom: 30px;
+					display: block;
+				}
+				.main__tag {
+					margin-bottom: 10px;
+					ul {
+						li {
+							display: inline-block;
+							font-size: 14px;
+							padding: 5px;
+						}
+					}
+				}
+				.main__playBtn {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 25px;
+					background-repeat: no-repeat;
+					background-position: center;
+					.play__btn {
+						width: 20%;
+						.play {
+							display: inline-block;
+							background: url("../img/play_button.svg");
+							width: 30px;
+							height: 30px;
+							cursor: pointer;
+						}
+						.stop {
+							display: inline-block;
+							background: url("../img/stop_button.svg");
+							width: 30px;
+							height: 30px;
+							cursor: pointer;
+							display: none;
+						}
+					}
+
+					.progress__box {
+						width: 50%;
+						.progress {
+							position: relative;
+							margin: 0 auto;
+							width: 150px;
+							height: 5px;
+							background: #e5e5e5;
+							border-radius: 5px;
+							cursor: pointer;
+							.bar {
+								position: relative;
+								z-index: 2;
+								width: 50px;
+								height: 5px;
+								border-radius: 5px;
+								background: #02ee9f;
+								.bar__btn {
+									position: absolute;
+									top: 2px;
+									left: 50px;
+									transform: translate(-50%, -50%);
+									width: 16px;
+									height: 16px;
+									background: #02ee9f;
+									border-radius: 50%;
+									z-index: 10px;
+								}
+							}
+						}
+					}
+				}
+				.main__icon {
+					display: flex;
+					justify-content: center;
+					> a {
+						width: 20%;
+
+						img {
+							width: 30px;
+							height: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 960px) {
+	#main {
+		#youtube__recom {
+			.main__youtube__music {
+				flex-direction: column;
+				align-items: center;
+				.player__left {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				.player__right {
+					width: 100%;
+					.main__tag {
+						margin-bottom: 30px;
+					}
+					.main__playBtn {
+						.progress__box {
+							width: 25%;
+							.progress {
+								width: 130px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// main bottom
+.top__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	.top__left {
+		width: 45%;
+		font-size: 40px;
+		font-weight: 900;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -10px;
+			width: 140px;
+			height: 2px;
+			background: var(--main-color);
+		}
+		em {
+			color: var(--main-color);
+		}
+	}
+	.top__rigth {
+		img {
+			width: 430px;
+		}
+	}
+}
+.top__music__list {
+	margin-bottom: 70px;
+	h2 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.tag__box {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #1f1f1f;
+		padding-bottom: 15px;
+		font-family: var(--font-korSub);
+		font-weight: 300;
+		padding: 12px 10px;
+		transition: all 0.3s;
+		border-bottom: 1px solid #1f1f1f;
+		&:hover {
+			background: #252525;
+			backdrop-filter: blur(10px);
+			border-radius: 5px;
+		}
+
+		> img {
+			width: 9%;
+			object-fit: cover;
+			margin-right: 15px;
+		}
+
+		.tag__duration {
+			width: 40%;
+			font-family: var(--font-korSub);
+
+			.duration__top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				img {
+					display: block;
+					width: 15%;
+					height: 50px;
+					margin-right: -15px;
+				}
+
+				.duration__time {
+					width: 13%;
+				}
+			}
+
+			.duration__bot {
+				margin-top: 30px;
+				margin-left: 15px;
+
+				span {
+					color: var(--main-color);
+				}
+			}
+		}
+
+		.tag__tags {
+			width: 30%;
+
+			ul {
+				text-align: center;
+
+				li {
+					display: inline-block;
+					margin-right: 20px;
+					margin-top: 15px;
+
+					a {
+						display: inline-block;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.tag__icon {
+			width: 20%;
+			margin-top: 15px;
+			text-align: center;
+
+			.play {
+				width: 26px;
+				height: 26px;
+				display: inline-block;
+				background: url("../img/Artist.svg") no-repeat center/cover;
+				margin-right: 15px;
+			}
+
+			.stop {
+				width: 26px;
+				height: 26px;
+				display: inline-block;
+				background: url("../img/Mute.svg") no-repeat center/cover;
+				margin-right: 15px;
+			}
+
+			.youtube {
+				width: 35px;
+				height: 26px;
+				display: inline-block;
+				background: url("../img/Vector.svg") no-repeat center/cover;
+			}
+		}
+	}
+}
+.add__link {
+	text-align: center;
+	margin-bottom: 250px;
+	a {
+		border: 1px solid #979797;
+		padding: 10px 50px;
+		font-size: 18px;
+		border-radius: 50px;
+		color: #979797;
+		transition: all 0.3s;
+		&:hover {
+			border-color: var(--main-color);
+			color: var(--main-color);
+		}
+	}
+}
