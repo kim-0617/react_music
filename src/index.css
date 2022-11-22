@@ -797,6 +797,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+.top__music__list .tag__box .tag__duration .duration__top .player {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .top__music__list .tag__box .tag__duration .duration__top img {
   display: block;

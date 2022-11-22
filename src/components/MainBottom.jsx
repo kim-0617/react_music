@@ -1,43 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
-import parser from "cheerio";
 import TagBox from "./TagBox";
+import fetchAPI from "../utils/fetchAPI";
+import chart from "../utils/chart50.json";
 
 const MainBottom = () => {
-  const [bgms, setBgms] = useState([]);
-  // crwal
-  const url = "https://www.sellbuymusic.com";
-  useEffect(() => {
-    const getHTML = async (keyword) => {
-      try {
-        return await axios.get(url); // encodeURI(keyword)
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    const parsing = async (keyword) => {
-      const html = await getHTML(keyword);
-      const $ = parser.load(html.data);
-      const $bgmSearchList = $(".new_bgm_list_block");
-      const tmp = [];
-      $bgmSearchList.each((idx, node) => {
-        tmp.push({
-          img: url + $(node).find(".thumbs img").attr("src"),
-          title: $(node).find(".song_name a").text(),
-          musition: "by " + $(node).find(".musician a").text(),
-          tags: $(node).find(".hash_tag a").text(),
-          time: $(node).find(".time").text(),
-        });
-      });
+  const [videos, setVideos] = useState(chart.items);
 
-      setBgms(tmp);
-    };
-    parsing();
-  }, [url]);
+  // useEffect(() => {
+  //   const fetchResults = async () => {
+  //     const data = await fetchAPI(
+  //       "playlistItems?playlistId=PL4fGSI1pDJn6jXS_Tv_N9B8Z0HTRVJE0m&part=snippet"
+  //     );
+  //     setVideos(data.items);
+  //   };
+  //   fetchResults();
+  // }, []);
 
-  console.log(bgms);
-
+  if (!videos) return null;
   return (
     <section id="top__music">
       <div className="container">
@@ -53,8 +32,8 @@ const MainBottom = () => {
         <div className="top__music__list">
           <h2>Music List</h2>
           <div className="tag__music">
-            {bgms.map((bgm, index) => (
-              <TagBox key={bgm.title} bgm={bgm} index={index} />
+            {videos.map((video, index) => (
+              <TagBox key={video.id} video={video} index={index} />
             ))}
           </div>
         </div>
