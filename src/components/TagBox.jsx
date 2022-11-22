@@ -34,7 +34,7 @@ function TagBox({ video, index }) {
   useEffect(() => {
     if (!videoID) return;
     const myHeaders = new Headers();
-    myHeaders.append("X-RapidAPI-Key", "45464e034emsh06e4b4a562fb65ep146392jsn535eb2dff4cc");
+    myHeaders.append("X-RapidAPI-Key", "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602");
     myHeaders.append("X-RapidAPI-Host", 'youtube-v31.p.rapidapi.com');
 
     const requestOptions = {
