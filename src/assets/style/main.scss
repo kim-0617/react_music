@@ -127,7 +127,6 @@
                 .bar__btn {
                   position: absolute;
                   top: 2px;
-                  left: 50px;
                   transform: translate(-50%, -50%);
                   width: 16px;
                   height: 16px;
@@ -221,7 +220,7 @@
     margin-bottom: 20px;
   }
   .tag__box {
-    display: flex;
+    display: none;
     justify-content: space-between;
     border-bottom: 1px solid #1f1f1f;
     padding-bottom: 15px;
@@ -231,6 +230,10 @@
     transition: all 0.3s;
     border-bottom: 1px solid #1f1f1f;
     position: relative;
+
+    &.show {
+      display: flex;
+    }
 
     &:hover {
       background: #252525;
