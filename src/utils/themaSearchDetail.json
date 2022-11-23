@@ -1,0 +1,470 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "nextPageToken": "EAAaBlBUOkNBbw",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC4yQjZFRkExQjFGODk3RUFD",
+      "snippet": {
+        "publishedAt": "2021-11-03T05:18:45Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 여러가지 생각에 치이는 밤, 감성 가득할 INFP들에게 | 호피폴라, 혁오, 폴킴, 김필 •••",
+        "description": "📷 이미지 [콜렉티브아츠, 김현창 - Away Album Art]\n📍 문의 : intheindie2@gmail.com\n마음에 드셨다면 구독, 좋아요, 댓글로 마음껏 표현해주세요😊\n\n✨Time Line\n[00:00:00]1.호피폴라 - 너의 바다\n[00:04:38]2.WOODZ (조승연) - 주마등\n[00:08:13]3.혁오 (HYUKOH) - 공드리\n[00:13:12]4.엔분의일 (1/N) - 어지러운 마음\n[00:16:31]5.SOLE (쏠) - Slow\n[00:20:31]6.최물빛 - 모닥불\n[00:24:18]7.폴킴 - 사랑하는 당신께\n[00:27:55]8.Collective Arts (콜렉티브아츠), 김현창 - Away\n[00:32:03]9.김필 - 어떤 날은\n[00:35:38]10.오세민(도란) - 생각에 지쳐 잠 못 드는 밤에\n[00:39:59]11.이승윤 - 1995년 여름\n[00:44:20]12.손범 - 누가 저 새를 장 속에 가두었나요\n[00:48:01]13.구만 (9.10000) - 나 혼자 남은 지구\n[00:51:18]14.차우 (Chawoo) - 내 마음이 내 마음대로 잘 안돼\n[00:54:38]15.좋아서하는밴드 - 명왕성 (Vocal 안복진)\n\n\n=\n\n\n[00:59:03]1.호피폴라 - 너의 바다\n[01:03:42]2.WOODZ (조승연) - 주마등\n[01:07:17]3.혁오 (HYUKOH) - 공드리\n[01:12:16]4.엔분의일 (1/N) - 어지러운 마음\n[01:15:35]5.SOLE (쏠) - Slow\n[01:19:35]6.최물빛 - 모닥불\n[01:23:22]7.폴킴 - 사랑하는 당신께\n[01:26:58]8.Collective Arts (콜렉티브아츠), 김현창 - Away\n[01:31:07]9.김필 - 어떤 날은\n[01:34:42]10.오세민(도란) - 생각에 지쳐 잠 못 드는 밤에\n[01:39:03]11.이승윤 - 1995년 여름\n[01:43:24]12.손범 - 누가 저 새를 장 속에 가두었나요\n[01:47:05]13.구만 (9.10000) - 나 혼자 남은 지구\n[01:50:22]14.차우 (Chawoo) - 내 마음이 내 마음대로 잘 안돼\n[01:53:42]15.좋아서하는밴드 - 명왕성 (Vocal 안복진)\n\n------------------------------------------------------------------------------------\n📀 영상에서 재생되는 광고는 유튜브에서 자동적으로 발생되고 있습니다.\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n------------------------------------------------------------------------------------\n#인프피 #INFP #감성 #playlist",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "RYZMbzksrKA"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC5DMkU4NTY1QUFGQTYwMDE3",
+      "snippet": {
+        "publishedAt": "2021-09-15T09:03:40Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 가을에 사랑을 시작하는 이들에게 | 장범준, 멜로망스, 치즈, 김뮤지엄 •••",
+        "description": "🎧List\n(아티스트 - 제목)\n[00:00:00]1.장범준 - 당신과는 천천히\n[00:04:00]2.멜로망스 - 아주 멀지 않은 날에\n[00:07:41]3.폴킴 - 사랑은 타이밍\n[00:11:56]4.베오 (BEO) - 상상해\n[00:15:16]5.네이비쿼카 (NavyQuokka) - Make Me Smile\n[00:17:59]6.오추프로젝트 - 아까침에\n[00:21:12]7.CHEEZE (치즈) - 모두의 순간\n[00:25:45]8.유난이 - 사랑을 설명할 수 있다면 (Acoustic Ver.)\n[00:29:08]9.김뮤지엄 (KIMMUSEUM) - 281.31km (To.)\n[00:31:57]10.마리슈 - 그대와\n[00:35:06]11.블루파프리카 - 나도 모르게\n[00:38:19]12.10CM - 내 눈에만 보여\n[00:40:57]13.406호 프로젝트 - 나랑 놀자\n[00:44:47]14.후추스 - 고백하는 달\n[00:48:36]15.차우 (Chawoo) - Honey (Feat. 크루셜스타)\n[00:52:22]16.비오 (B.O.) - 지구 멸망 (Feat. 버벌진트)\n[00:55:34]17.Sweet The Kid - 난 너를 보면 (Feat. Jimmy Brown)\n\n=\n\n[00:58:31]1.장범준 - 당신과는 천천히\n[01:02:31]2.멜로망스 - 아주 멀지 않은 날에\n[01:06:12]3.폴킴 - 사랑은 타이밍\n[01:10:28]4.베오 (BEO) - 상상해\n[01:13:47]5.네이비쿼카 (NavyQuokka) - Make Me Smile\n[01:16:30]6.오추프로젝트 - 아까침에\n[01:19:43]7.CHEEZE (치즈) - 모두의 순간\n[01:24:16]8.유난이 - 사랑을 설명할 수 있다면 (Acoustic Ver.)\n[01:27:39]9.김뮤지엄 (KIMMUSEUM) - 281.31km (To.)\n[01:30:29]10.마리슈 - 그대와\n[01:33:38]11.블루파프리카 - 나도 모르게\n[01:36:51]12.10CM - 내 눈에만 보여\n[01:39:28]13.406호 프로젝트 - 나랑 놀자\n[01:43:18]14.후추스 - 고백하는 달\n[01:47:07]15.차우 (Chawoo) - Honey (Feat. 크루셜스타)\n[01:50:53]16.비오 (B.O.) - 지구 멸망 (Feat. 버벌진트)\n[01:54:05]17.Sweet The Kid - 난 너를 보면 (Feat. Jimmy Brown)\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📍Contact : intheindie2@gmail.com\n📷 Album art [유난이 - 사랑을 설명할 수 있다면 (Acoustic Ver.)]\n\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n📀 음원 사용을 원하지 않는 아티스트분들은 메일 남겨주세요\n\n\n💿구독하기 - https://bit.ly/2RBbvym\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n#가을 #사랑 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7T-BghFjaa4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7T-BghFjaa4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7T-BghFjaa4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7T-BghFjaa4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/7T-BghFjaa4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "7T-BghFjaa4"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC41QUZGQTY5OTE4QTREQUU4",
+      "snippet": {
+        "publishedAt": "2021-10-07T08:08:34Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧  나랑 같이 걸을래 혹시 내일은 뭐해? | 적재, 거미, 잔나비, 뎁트 •••",
+        "description": "💿구독하기 - https://bit.ly/2RBbvym\n\n📷 적재 - 나랑 같이 걸을래 (바른연애 길잡이 X 적재)\n\n🎧List\n(아티스트 - 제목)\n[00:00:00]1.적재 - 나랑 같이 걸을래 (바른연애 길잡이 X 적재)\n[00:03:43]2.서교동의 밤 - Walking in the Moonlight (Feat. 다원, Lazier)\n[00:07:31]3.거미 - Autumn Breeze\n[00:11:09]4.잔나비 - 가을밤에 든 생각\n[00:14:12]5.설호승 (SURL) - 너였으면 좋겠어\n[00:17:38]6.이민혁 - 너만 몰라\n[00:20:57]7.서액터, 뎁트 - Paris With You (Feat. Jae Luna)\n[00:24:05]8.정효빈 - Starlight\n[00:27:08]9.미모(MIMO) - 별 빛 비행\n[00:31:11]10.이시훈 - 함께 걷는 가을 (feat. 정홍록)\n[00:34:43]11.박소은 - 너는 나의 문학\n[00:38:03]12.ABOUT(어바웃) - 우리 행복할 수 있어\n[00:41:14]13.감성주의 - 달산책\n[00:44:24]14.김재훈 - 앉아서 하는 여행\n[00:47:23]15.FIL (필) - 아직도 그대로인 건\n[00:50:58]16.DOKO (도코) - 그대란 사람을 다시 또 만나고\n\n\n=\n\n\n[00:54:36]1.적재 - 나랑 같이 걸을래 (바른연애 길잡이 X 적재)\n[00:58:19]2.서교동의 밤 - Walking in the Moonlight (Feat. 다원, Lazier)\n[01:02:07]3.거미 - Autumn Breeze\n[01:05:45]4.잔나비 - 가을밤에 든 생각\n[01:08:48]5.설호승 (SURL) - 너였으면 좋겠어\n[01:12:14]6.이민혁 - 너만 몰라\n[01:15:33]7.서액터, 뎁트 - Paris With You (Feat. Jae Luna)\n[01:18:41]8.정효빈 - Starlight\n[01:21:44]9.미모(MIMO) - 별 빛 비행\n[01:25:47]10.이시훈 - 함께 걷는 가을 (feat. 정홍록)\n[01:29:19]11.박소은 - 너는 나의 문학\n[01:32:39]12.ABOUT(어바웃) - 우리 행복할 수 있어\n[01:35:50]13.감성주의 - 달산책\n[01:39:00]14.김재훈 - 앉아서 하는 여행\n[01:41:59]15.FIL (필) - 아직도 그대로인 건\n[01:45:34]16.DOKO (도코) - 그대란 사람을 다시 또 만나고\n\n\n📀 'In The Indie'는 아티스트들의 소중한 음원을 홍보하고 지원하는 채널입니다. \n채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 'In The Indie'의 모든 곡들은 저작권에 보호받고 있습니다. \n이 채널 밖에서도 사용할 수 없으며 제3자의 콘텐츠에 BGM으로도 사용할 수 없습니다.\n📀 음원 사용을 원하지 않는 아티스트 님은 댓글로 남겨주세요\n\n\n#산책 #사랑 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/q4Lh2WMf0VI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/q4Lh2WMf0VI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/q4Lh2WMf0VI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/q4Lh2WMf0VI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/q4Lh2WMf0VI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "q4Lh2WMf0VI"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC43MTI1NDIwOTMwQjIxMzNG",
+      "snippet": {
+        "publishedAt": "2021-08-31T02:40:40Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 선선한 바람과 너로 완성되는 알앤비 모음 | 쏠, 헤이즈, JUNNY (주니), 적재 •••",
+        "description": "곡 차단으로 인해 재업로드합니다😥\n\n🎧List\n(아티스트 - 제목)\n[00:00:00]1.Wynn (윈) - LA LA LAND\n[00:03:16]2.SOLE (쏠) - 음음 (Prod. Cosmic Boy)\n[00:06:03]3.MELOH - 나무 (Feat. Sam Rui) (Prod. iamdl)\n[00:09:37]4.도화 (DoHWA) - 늦여름 (Feat. BMO) (Prod. oo kiki)\n[00:12:59]5.헤이즈 (Heize) - And July (Feat. DEAN, DJ Friz)\n[00:16:45]6.영화 - 우리가 사랑하는 방법\n[00:19:57]7.DIGO - 여름밤 우리\n[00:23:43]8.pH-1 - Different Summer (Prod. Mokyo)\n[00:27:17]9.JUNNY (주니) - MOVIE\n[00:30:19]10.이성혁 - HolyDay\n[00:33:27]11.Filament - 너무 완벽해\n[00:36:40]12.적재 - 타투 (Tattoo)\n[00:39:49]13.jeebanoff (지바노프) - 너와 같이 (feat. Paul Blanco)\n[00:43:43]14.장한나 - 아껴서 뭐해 (Feat. 릴러말즈(Leellamarz))\n[00:47:04]15.수비 (Soovi) - Make the Move (feat. pH-1)\n\n=\n\n[00:50:03]1.Wynn (윈) - LA LA LAND\n[00:53:20]2.SOLE (쏠) - 음음 (Prod. Cosmic Boy)\n[00:56:07]3.MELOH - 나무 (Feat. Sam Rui) (Prod. iamdl)\n[00:59:40]4.도화 (DoHWA) - 늦여름 (Feat. BMO) (Prod. oo kiki)\n[01:03:03]5.헤이즈 (Heize) - And July (Feat. DEAN, DJ Friz)\n[01:06:49]6.영화 - 우리가 사랑하는 방법\n[01:10:01]7.DIGO - 여름밤 우리\n[01:13:46]8.pH-1 - Different Summer (Prod. Mokyo)\n[01:17:20]9.JUNNY (주니) - MOVIE\n[01:20:23]10.이성혁 - HolyDay\n[01:23:31]11.Filament - 너무 완벽해\n[01:26:44]12.적재 - 타투 (Tattoo)\n[01:29:53]13.jeebanoff (지바노프) - 너와 같이 (feat. Paul Blanco)\n[01:33:47]14.장한나 - 아껴서 뭐해 (Feat. 릴러말즈(Leellamarz))\n[01:37:08]15.수비 (Soovi) - Make the Move (feat. pH-1)\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📍Contact : intheindie2@gmail.com\n📷 Album art [적재 - 타투 (Tattoo)]\n\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n📀 음원 사용을 원하지 않는 아티스트분들은 메일 남겨주세요\n\n\n💿구독하기 - https://bit.ly/2RBbvym\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n#가을 #알앤비 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5z4eca2vj1M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5z4eca2vj1M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5z4eca2vj1M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5z4eca2vj1M/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5z4eca2vj1M/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "5z4eca2vj1M"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC5ENjI1QUI0MDI5NEQzODFE",
+      "snippet": {
+        "publishedAt": "2021-11-19T08:41:08Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 우리가 반짝이는 순간을 바라봐줘요 | 뎁트, 훈스, 에릭남, 죠지 •••",
+        "description": "🎧List\n(아티스트 - 제목)\n[00:00:00]1.뎁트 - Winter (Feat. nobody likes you pat)\n[00:02:41]2.훈스 (HOONS) - 우리가 반짝이는 순간\n[00:06:13]3.죠지 - 바라봐줘요\n[00:10:23]4.행성 - 꽃봉오리\n[00:13:40]5.롱디 (LONG:D) - 따뜻해줘\n[00:17:27]6.에릭남 (Eric Nam) - 녹여줘\n[00:21:15]7.AVOIKD (에이보키드) - Color\n[00:24:26]8.요다영 - Lovelylove (Feat. 최낙타)\n[00:27:36]9.미모(MIMO) - 별 빛 비행\n[00:31:40]10.차우 (Chawoo), 이진솔 (에이프릴) - 이대로\n[00:34:35]11.윤딴딴 - 겨울을 걷는다\n[00:39:07]12.어쿠루브 - 몰라 너 싫어 (Feat. 선아, 리와인)\n[00:42:33]13.에릭남 (Eric Nam), CHEEZE (치즈) - Perhaps Love (사랑인가요) (Prod.By 박근태)\n[00:46:32]14.406호 프로젝트 - 넌 나 어때\n[00:49:57]15.이민혁 - 너의 사랑이 날 웃게 해 \n\n\n=\n\n\n[00:53:33]1.뎁트 - Winter (Feat. nobody likes you pat)\n[00:56:15]2.훈스 (HOONS) - 우리가 반짝이는 순간\n[00:59:46]3.죠지 - 바라봐줘요\n[01:03:57]4.행성 - 꽃봉오리\n[01:07:13]5.롱디 (LONG:D) - 따뜻해줘\n[01:11:01]6.에릭남 (Eric Nam) - 녹여줘\n[01:14:49]7.AVOIKD (에이보키드) - Color\n[01:18:00]8.요다영 - Lovelylove (Feat. 최낙타)\n[01:21:10]9.미모(MIMO) - 별 빛 비행\n[01:25:14]10.차우 (Chawoo), 이진솔 (에이프릴) - 이대로\n[01:28:09]11.윤딴딴 - 겨울을 걷는다\n[01:32:41]12.어쿠루브 - 몰라 너 싫어 (Feat. 선아, 리와인)\n[01:36:07]13.에릭남 (Eric Nam), CHEEZE (치즈) - Perhaps Love (사랑인가요) (Prod.By 박근태)\n[01:40:06]14.406호 프로젝트 - 넌 나 어때\n[01:43:31]15.이민혁 - 너의 사랑이 날 웃게 해 \n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📍Contact : intheindie2@gmail.com\n📷 Album art [에릭남 (Eric Nam), CHEEZE (치즈) - Perhaps Love (사랑인가요) (Prod.By 박근태)]\n\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n📀 음원 사용을 원하지 않는 아티스트분들은 메일 남겨주세요\n\n\n💿구독하기 - https://bit.ly/2RBbvym\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n#기분좋은 #사랑 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/IrOCWX3KELs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/IrOCWX3KELs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/IrOCWX3KELs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/IrOCWX3KELs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/IrOCWX3KELs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "IrOCWX3KELs"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC41RTNBREYwMkI5QzU3RkY2",
+      "snippet": {
+        "publishedAt": "2021-11-17T10:21:52Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 이번 겨울엔 저에게도 설레는 첫눈이 올까요?⛄ | 백예린, 쏠, 크루셜스타, 케이시  •••",
+        "description": "🎧List\n(아티스트 - 제목)\n[00:00:00]1.XIA (준수) - Thank U For\n[00:04:31]2.백예린 (Yerin Baek) - Rest\n[00:07:54]3.SOLE (쏠) - 선물\n[00:11:37]4.마요 (Mayo), 정창현, 채하얀, Chooy (츄이) - 흰 눈이 오면 고백할까\n[00:15:12]5.케이시 (Kassy) - 사랑이 시작될 때\n[00:19:13]6.권진아 - 이번 겨울\n[00:23:21]7.NS 윤지 - 눈이 오는 날엔 (Feat. 딘딘)\n[00:26:30]8.크루셜스타 (CRUCiAL STAR) - A Winter Love Song\n[00:30:17]9.이송이 - 첫눈\n[00:33:22]10.10CM - 입김\n[00:37:12]11.적재 - View\n[00:41:42]12.정준일 - 첫 눈\n[00:46:33]13.순 프로젝트 - 눈송이 (Feat. 루 (Loup))\n[00:50:43]14.손승연 - 첫눈이 온다구요\n[00:54:52]15.레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)\n[00:59:09]16.Cubanism (큐바니즘) - 그대의 크리스마스는 아름다운가요\n\n\n=\n\n\n[01:02:45]1.XIA (준수) - Thank U For\n[01:07:16]2.백예린 (Yerin Baek) - Rest\n[01:10:39]3.SOLE (쏠) - 선물\n[01:14:22]4.마요 (Mayo), 정창현, 채하얀, Chooy (츄이) - 흰 눈이 오면 고백할까\n[01:17:57]5.케이시 (Kassy) - 사랑이 시작될 때\n[01:21:58]6.권진아 - 이번 겨울\n[01:26:06]7.NS 윤지 - 눈이 오는 날엔 (Feat. 딘딘)\n[01:29:15]8.크루셜스타 (CRUCiAL STAR) - A Winter Love Song\n[01:33:03]9.이송이 - 첫눈\n[01:36:08]10.10CM - 입김\n[01:39:58]11.적재 - View\n[01:44:27]12.정준일 - 첫 눈\n[01:49:18]13.순 프로젝트 - 눈송이 (Feat. 루 (Loup))\n[01:53:28]14.손승연 - 첫눈이 온다구요\n[01:57:37]15.레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)\n[02:01:54]16.Cubanism (큐바니즘) - 그대의 크리스마스는 아름다운가요\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📍Contact : intheindie2@gmail.com\n📷 Album art [레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)]\n\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n📀 음원 사용을 원하지 않는 아티스트분들은 메일 남겨주세요\n\n\n💿구독하기 - https://bit.ly/2RBbvym\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n#겨울 #사랑 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "FnZe0y5RSOQ"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC42Qzk5MkEzQjVFQjYwRDA4",
+      "snippet": {
+        "publishedAt": "2022-08-31T07:19:01Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 당신이 좋아하던 가을이 왔어요 | 산들, 치즈, 백예린 •••",
+        "description": "맑은 날씨처럼 하루하루 미소 짓는 하루 되세요!\n\n\n\n\n\n\n📍 문의 : intheindie2@gmail.com\n--------------------------------------------------------------------------------------------\n📀 영상에서 재생되는 광고는 유튜브에서 자동적으로 발생되고 있습니다.\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n--------------------------------------------------------------------------------------------\n#가을플리 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7TeDOuMME7w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7TeDOuMME7w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7TeDOuMME7w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7TeDOuMME7w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/7TeDOuMME7w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "7TeDOuMME7w"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC40QTA3NTU2RkM1QzlCMzYx",
+      "snippet": {
+        "publishedAt": "2021-10-27T09:43:38Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 당신은 나에게 선물 같은 존재예요 | 멜로망스, 백예린, 서현진, 뜨거운 감자 •••",
+        "description": "📷 이미지 [백예린 (Yerin Baek) - Antifreeze Album Art]\n📍 문의 : intheindie2@gmail.com\n마음에 드셨다면 구독, 좋아요, 댓글로 마음껏 표현해주세요😊\n\n\n[Time Line]\n[00:00:00]1.멜로망스 - 선물\n[00:04:18]2.서현진, 유승우 - 사랑이 뭔데\n[00:07:51]3.플라스틱 - 층간스캔들 (Feat. 션리)\n[00:11:49]4.김그림 - 좋아한다 말할까\n[00:15:18]5.뜨거운 감자 - 고백\n[00:19:08]6.럼블피쉬 - 청혼\n[00:22:29]7.젤리프로젝트 - 같이 있어요 (Vocal By 노윤하)\n[00:25:15]8.백예린 (Yerin Baek) - Antifreeze\n[00:29:21]9.버블 사운드 (bubble sound) - 꽃길만 걷자 (Feat. Fleekman)\n[00:32:53]10.밀크티 - 초콜렛군 오렌지양\n[00:36:35]11.매드클라운, 브라더수 - 만화처럼 (Like Romance Comics)\n[00:39:58]12.지코 (ZICO) - 웬수 (Feat. BIBI)\n[00:43:13]13.세라 - 결혼 하자는거 맞지?(面相有罪) (Ft.SIREN)\n[00:46:14]14.앤씨아, 슈가볼 (Sugarbowl) - 읽어주세요\n[00:50:23]15.오늘의 코믹스 - Fly Away\n\n=\n\n[00:53:08]1.멜로망스 - 선물\n[00:57:27]2.서현진, 유승우 - 사랑이 뭔데\n[01:00:59]3.플라스틱 - 층간스캔들 (Feat. 션리)\n[01:04:58]4.김그림 - 좋아한다 말할까\n[01:08:26]5.뜨거운 감자 - 고백\n[01:12:17]6.럼블피쉬 - 청혼\n[01:15:38]7.젤리프로젝트 - 같이 있어요 (Vocal By 노윤하)\n[01:18:24]8.백예린 (Yerin Baek) - Antifreeze\n[01:22:30]9.버블 사운드 (bubble sound) - 꽃길만 걷자 (Feat. Fleekman)\n[01:26:02]10.밀크티 - 초콜렛군 오렌지양\n[01:29:44]11.매드클라운, 브라더수 - 만화처럼 (Like Romance Comics)\n[01:33:06]12.지코 (ZICO) - 웬수 (Feat. BIBI)\n[01:36:22]13.세라 - 결혼 하자는거 맞지?(面相有罪) (Ft.SIREN)\n[01:39:23]14.앤씨아, 슈가볼 (Sugarbowl) - 읽어주세요\n[01:43:32]15.오늘의 코믹스 - Fly Away\n\n------------------------------------------------------------------------------------\n📀 영상에서 재생되는 광고는 유튜브에서 자동적으로 발생되고 있습니다.\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n------------------------------------------------------------------------------------\n\n#가을 #사랑 #playlist",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SM841Q0BEvc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SM841Q0BEvc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SM841Q0BEvc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SM841Q0BEvc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SM841Q0BEvc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "SM841Q0BEvc"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC5DQ0MyQ0Y4Mzg0M0VGOEYw",
+      "snippet": {
+        "publishedAt": "2021-09-03T07:42:00Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧  자몽허니블랙티 마시면서 가을을 기다리는 노래 | 길구봉구, 이무진, 스텔라장, 로코베리 •••",
+        "description": "🎧List\n(아티스트 - 제목)\n[00:00:00]1.D.no (디노) - 밟힌꽃\n[00:02:52]2.원종혁 - 비가 내리던 그 날\n[00:07:01]3.이무진 - 비와 당신\n[00:11:18]4.김율 - 내일은 잊을게 (Feat. 박태민)\n[00:15:34]5.길구봉구 - 이 별\n[00:19:30]6.매드클라운, 스텔라장 (Stella Jang) - No Question\n[00:22:40]7.층간소음 - 커피\n[00:26:43]8.좋아서하는밴드 - 여름의 끝, 가을편지\n[00:30:25]9.오늘의라디오 - 아아아아\n[00:33:50]10.로코베리 - 안녕, 가을아\n[00:37:28]11.헤르쯔 아날로그 - Moonlight (feat. 송예린)\n[00:40:53]12.조금 가까운 사이 - 밀크티\n[00:44:21]13.곽푸른하늘 - 읽히지 않는 책\n[00:48:35]14.담소네공방 - 가을바람\n\n=\n\n[00:52:38]1.D.no (디노) - 밟힌꽃\n[00:55:31]2.원종혁 - 비가 내리던 그 날\n[00:59:40]3.이무진 - 비와 당신\n[01:03:57]4.김율 - 내일은 잊을게 (Feat. 박태민)\n[01:08:12]5.길구봉구 - 이 별\n[01:12:09]6.매드클라운, 스텔라장 (Stella Jang) - No Question\n[01:15:19]7.층간소음 - 커피\n[01:19:21]8.좋아서하는밴드 - 여름의 끝, 가을편지\n[01:23:04]9.오늘의라디오 - 아아아아\n[01:26:29]10.로코베리 - 안녕, 가을아\n[01:30:06]11.헤르쯔 아날로그 - Moonlight (feat. 송예린)\n[01:33:32]12.조금 가까운 사이 - 밀크티\n[01:37:00]13.곽푸른하늘 - 읽히지 않는 책\n[01:41:13]14.담소네공방 - 가을바람\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📍Contact : intheindie2@gmail.com\n\n\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n📀 음원 사용을 원하지 않는 아티스트분들은 메일 남겨주세요\n\n\n💿구독하기 - https://bit.ly/2RBbvym\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n#카페 #가을 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1Thdgv0uZjw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1Thdgv0uZjw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1Thdgv0uZjw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1Thdgv0uZjw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1Thdgv0uZjw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "1Thdgv0uZjw"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "id": "UEw2STdieUVoMURCbkFaTklOM2RsZjJlMldvVU5xaWNzeC5ENDU4Q0M4RDExNzM1Mjcy",
+      "snippet": {
+        "publishedAt": "2020-09-21T08:28:29Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "PLAYLIST l 주말의 여유, 감미로운 인디음악🏖️🏠",
+        "description": "#집에서함께음악들어요 - Listen to Music with Me\n구독하기✔ - https://bit.ly/2RBbvym\n\nSubscribing and writing are good for me.\nIf you liked the video, subscribe to it. \nPress it. Thank you ♥\n\n🎧List\n[00:02]1. 미모(MIMO) - 별 빛 비행 \n[04:04]2. 감성주의 - 잘했어, 우리   \n[08:15]3. 루시엔 (Lucien) - Who You Are   \n[11:49]4. 2층과3층사이 - 어제   \n[14:32]5. 오곤 - 나랑 같이 잠들자   \n[18:45]6. 한살차이 - 널 그려놓은 밤   \n[22:13]7. 한살차이 - 달콤한 연애중   \n[25:10]8. 설봄(Seolbom) - 나를 안아주는 사람이 생겼으면 좋겠어\n[28:12]9. 김슬기 - 단 꿈 \n[31:30]10. 유월말 선샤인 - 쉬이 (Remastered Ver.)   \n[35:16]11. 이츠허밍 - 그 어느 날처럼 우린   \n[38:49]12. 잎새달 - 너를 안은 너에게   \n[41:58]13. 2층과3층사이 - 아직  \n[46:31]14. 굿나잇파트라슈 - 여행 전날 밤\n\n\n'In The Indie' is a channel that promotes and supports the artists' precious sound sources. You can enjoy more of  Indie artists and songs recommended by 'In The Indie' on 'Youtube Music'.\n\nAll songs at 'In The Indie' are properly licensed and protected. They cannot be used out of this channel nor as BGM for 3rd parties' content.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/EwXY4smG66A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/EwXY4smG66A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/EwXY4smG66A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/EwXY4smG66A/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/EwXY4smG66A/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "playlistId": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "EwXY4smG66A"
+        },
+        "videoOwnerChannelTitle": "In The Indie _ 인디인디",
+        "videoOwnerChannelId": "UCmBqBxouLDy3Mfu4XzESuAA"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 42,
+    "resultsPerPage": 10
+  }
+}

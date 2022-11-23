@@ -20,11 +20,25 @@ function TagBox({ video, index }) {
   };
 
   const onProgress = (e) => {
-    setSec((prevState) => prevState += 1);
+    setSec((prevState) => (prevState += 1));
+  };
+
+  const onPlay = (e) => {
+    document
+      .querySelectorAll(".start")
+      [index].setAttribute("src", "../assets/img/playing.svg");
+  };
+
+  const onPause = (e) => {
+    document
+      .querySelectorAll(".start")
+      [index].setAttribute("src", "../assets/img/start.svg");
   };
 
   useEffect(() => {
-    let total = document.querySelectorAll(".duration__time")[index]?.innerText.split(":");
+    let total = document
+      .querySelectorAll(".duration__time")
+      [index]?.innerText.split(":");
     if (total) {
       setTotal(Number(total[0]) * 60 + Number(total[1]));
     }
@@ -34,21 +48,26 @@ function TagBox({ video, index }) {
   useEffect(() => {
     if (!videoID) return;
     const myHeaders = new Headers();
-    myHeaders.append("X-RapidAPI-Key", "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602");
-    myHeaders.append("X-RapidAPI-Host", 'youtube-v31.p.rapidapi.com');
+    myHeaders.append(
+      "X-RapidAPI-Key",
+      "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602"
+    );
+    myHeaders.append("X-RapidAPI-Host", "youtube-v31.p.rapidapi.com");
 
     const requestOptions = {
-      method: 'GET',
+      method: "GET",
       headers: myHeaders,
-      redirect: 'follow'
+      redirect: "follow",
     };
-    fetch(`https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${videoID}`, requestOptions)
-      .then(response => response.json())
-      .then(result => setInfo(result?.items[0]))
-      .catch(error => console.log('error', error));
+    fetch(
+      `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${videoID}`,
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result) => setInfo(result?.items[0]))
+      .catch((error) => console.log("error", error));
   }, [videoID]);
 
-  console.log(info)
   if (!info?.snippet) return <div>Loading...</div>;
 
   return (
@@ -56,7 +75,7 @@ function TagBox({ video, index }) {
       <img src={info?.snippet.thumbnails.medium.url} alt="01" />
       <div className="tag__duration">
         <div className="duration__top">
-          <img src="assets/img/start.svg" alt="start" />
+          <img src="assets/img/start.svg" alt="start" className="start" />
           <ReactPlayer
             className="player"
             url={`https://www.youtube.com/watch?v=${videoID}`}
@@ -64,6 +83,8 @@ function TagBox({ video, index }) {
             height={50}
             controls
             onProgress={onProgress}
+            onPlay={onPlay}
+            onPause={onPause}
           />
 
           <div className="progress">
@@ -72,16 +93,15 @@ function TagBox({ video, index }) {
             </div>
           </div>
           <div className="duration__time">
-            {info?.contentDetails.duration.replace("PT", "").at(-3) ===
-              "M"
+            {info?.contentDetails.duration.replace("PT", "").at(-3) === "M"
               ? info?.contentDetails.duration
-                .replace("PT", "")
-                .replace("M", ":0")
-                .replace("S", "")
+                  .replace("PT", "")
+                  .replace("M", ":0")
+                  .replace("S", "")
               : info?.contentDetails.duration
-                .replace("PT", "")
-                .replace("M", ":")
-                .replace("S", "")}
+                  .replace("PT", "")
+                  .replace("M", ":")
+                  .replace("S", "")}
           </div>
         </div>
 

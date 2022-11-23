@@ -1,0 +1,113 @@
+{
+  "kind": "youtube#videoListResponse",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "id": "FnZe0y5RSOQ",
+      "snippet": {
+        "publishedAt": "2021-11-17T23:00:05Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 이번 겨울엔 저에게도 설레는 첫눈이 올까요?⛄ | 백예린, 쏠, 크루셜스타, 케이시  •••",
+        "description": "🎧List\n(아티스트 - 제목)\n[00:00:00]1.XIA (준수) - Thank U For\n[00:04:31]2.백예린 (Yerin Baek) - Rest\n[00:07:54]3.SOLE (쏠) - 선물\n[00:11:37]4.마요 (Mayo), 정창현, 채하얀, Chooy (츄이) - 흰 눈이 오면 고백할까\n[00:15:12]5.케이시 (Kassy) - 사랑이 시작될 때\n[00:19:13]6.권진아 - 이번 겨울\n[00:23:21]7.NS 윤지 - 눈이 오는 날엔 (Feat. 딘딘)\n[00:26:30]8.크루셜스타 (CRUCiAL STAR) - A Winter Love Song\n[00:30:17]9.이송이 - 첫눈\n[00:33:22]10.10CM - 입김\n[00:37:12]11.적재 - View\n[00:41:42]12.정준일 - 첫 눈\n[00:46:33]13.순 프로젝트 - 눈송이 (Feat. 루 (Loup))\n[00:50:43]14.손승연 - 첫눈이 온다구요\n[00:54:52]15.레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)\n[00:59:09]16.Cubanism (큐바니즘) - 그대의 크리스마스는 아름다운가요\n\n\n=\n\n\n[01:02:45]1.XIA (준수) - Thank U For\n[01:07:16]2.백예린 (Yerin Baek) - Rest\n[01:10:39]3.SOLE (쏠) - 선물\n[01:14:22]4.마요 (Mayo), 정창현, 채하얀, Chooy (츄이) - 흰 눈이 오면 고백할까\n[01:17:57]5.케이시 (Kassy) - 사랑이 시작될 때\n[01:21:58]6.권진아 - 이번 겨울\n[01:26:06]7.NS 윤지 - 눈이 오는 날엔 (Feat. 딘딘)\n[01:29:15]8.크루셜스타 (CRUCiAL STAR) - A Winter Love Song\n[01:33:03]9.이송이 - 첫눈\n[01:36:08]10.10CM - 입김\n[01:39:58]11.적재 - View\n[01:44:27]12.정준일 - 첫 눈\n[01:49:18]13.순 프로젝트 - 눈송이 (Feat. 루 (Loup))\n[01:53:28]14.손승연 - 첫눈이 온다구요\n[01:57:37]15.레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)\n[02:01:54]16.Cubanism (큐바니즘) - 그대의 크리스마스는 아름다운가요\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📍Contact : intheindie2@gmail.com\n📷 Album art [레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)]\n\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n📀 음원 사용을 원하지 않는 아티스트분들은 메일 남겨주세요\n\n\n💿구독하기 - https://bit.ly/2RBbvym\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n#겨울 #사랑 #인디인디",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/FnZe0y5RSOQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "tags": [
+          "인디인디",
+          "in the indie",
+          "인디음악",
+          "인디",
+          "kpop",
+          "k-pop",
+          "playlist",
+          "카페에서 듣기 좋은 음악",
+          "coffee",
+          "cafe music",
+          "music channel",
+          "Bài hát tiếng hàn",
+          "Musique coréenne",
+          "Musik korea",
+          "Chanson coréenne",
+          "Lagu Korea",
+          "غنية الكورية",
+          "플레이리스트",
+          "Playlist",
+          "인디 플레이리스트",
+          "k-Indie",
+          "국내 인디",
+          "겨울 플레이리스트",
+          "겨울",
+          "겨울 사랑",
+          "첫눈",
+          "눈 플레이리스트",
+          "따뜻한",
+          "사랑 플레이리스트",
+          "love",
+          "winter",
+          "국내알앤비",
+          "xia",
+          "커플",
+          "winter music",
+          "snowing",
+          "snow",
+          "카페노래",
+          "카페에서 틀기 좋은 노래",
+          "연말",
+          "포근한"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ko",
+        "localized": {
+          "title": "𝗣𝗟𝗔𝗬𝗟𝗜𝗦𝗧 이번 겨울엔 저에게도 설레는 첫눈이 올까요?⛄ | 백예린, 쏠, 크루셜스타, 케이시  •••",
+          "description": "🎧List\n(아티스트 - 제목)\n[00:00:00]1.XIA (준수) - Thank U For\n[00:04:31]2.백예린 (Yerin Baek) - Rest\n[00:07:54]3.SOLE (쏠) - 선물\n[00:11:37]4.마요 (Mayo), 정창현, 채하얀, Chooy (츄이) - 흰 눈이 오면 고백할까\n[00:15:12]5.케이시 (Kassy) - 사랑이 시작될 때\n[00:19:13]6.권진아 - 이번 겨울\n[00:23:21]7.NS 윤지 - 눈이 오는 날엔 (Feat. 딘딘)\n[00:26:30]8.크루셜스타 (CRUCiAL STAR) - A Winter Love Song\n[00:30:17]9.이송이 - 첫눈\n[00:33:22]10.10CM - 입김\n[00:37:12]11.적재 - View\n[00:41:42]12.정준일 - 첫 눈\n[00:46:33]13.순 프로젝트 - 눈송이 (Feat. 루 (Loup))\n[00:50:43]14.손승연 - 첫눈이 온다구요\n[00:54:52]15.레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)\n[00:59:09]16.Cubanism (큐바니즘) - 그대의 크리스마스는 아름다운가요\n\n\n=\n\n\n[01:02:45]1.XIA (준수) - Thank U For\n[01:07:16]2.백예린 (Yerin Baek) - Rest\n[01:10:39]3.SOLE (쏠) - 선물\n[01:14:22]4.마요 (Mayo), 정창현, 채하얀, Chooy (츄이) - 흰 눈이 오면 고백할까\n[01:17:57]5.케이시 (Kassy) - 사랑이 시작될 때\n[01:21:58]6.권진아 - 이번 겨울\n[01:26:06]7.NS 윤지 - 눈이 오는 날엔 (Feat. 딘딘)\n[01:29:15]8.크루셜스타 (CRUCiAL STAR) - A Winter Love Song\n[01:33:03]9.이송이 - 첫눈\n[01:36:08]10.10CM - 입김\n[01:39:58]11.적재 - View\n[01:44:27]12.정준일 - 첫 눈\n[01:49:18]13.순 프로젝트 - 눈송이 (Feat. 루 (Loup))\n[01:53:28]14.손승연 - 첫눈이 온다구요\n[01:57:37]15.레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)\n[02:01:54]16.Cubanism (큐바니즘) - 그대의 크리스마스는 아름다운가요\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📍Contact : intheindie2@gmail.com\n📷 Album art [레터포유 (LETTER FOR YOU) - 눈이 내려와요 (Vocal. 임상현, 김은서)]\n\n📀 채널의 모든 수익은 아티스트에게 돌아갑니다.\n📀 모든 곡들은 저작권에 보호받고 있습니다. \n (해당 영상은 제3자의 콘텐츠 BGM으로 사용할 수 없습니다.)\n📀 음원 사용을 원하지 않는 아티스트분들은 메일 남겨주세요\n\n\n💿구독하기 - https://bit.ly/2RBbvym\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n#겨울 #사랑 #인디인디"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "contentDetails": {
+        "duration": "PT2H6M11S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "253080",
+        "likeCount": "3056",
+        "favoriteCount": "0",
+        "commentCount": "38"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}

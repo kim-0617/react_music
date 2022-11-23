@@ -1,0 +1,42 @@
+{
+  "kind": "youtube#playlistListResponse",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#playlist",
+      "id": "RDCLAK5uy_kT-sIJz2O-hpkxwjosN2hMt9Y5xevcPYI",
+      "snippet": {
+        "publishedAt": "1970-01-01T00:00:00Z",
+        "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+        "title": "Chill Korean Hip-Hop/R&B",
+        "description": "Feel the mellow-urban vibe of Seoul with Korean Hip-Hop/R&B. #hiphop #rnb #chill",
+        "thumbnails": {
+          "medium": {
+            "url": "https://i9.ytimg.com/s_p/RDCLAK5uy_kT-sIJz2O-hpkxwjosN2hMt9Y5xevcPYI/mqdefault.jpg?sqp=CJCs9psGir7X7AMGCIWR85sG&rs=AOn4CLDftHP3gMh8hWpbrn4l3dRWJgtKSg&v=1669122181",
+            "width": 180,
+            "height": 180
+          },
+          "standard": {
+            "url": "https://i9.ytimg.com/s_p/RDCLAK5uy_kT-sIJz2O-hpkxwjosN2hMt9Y5xevcPYI/sddefault.jpg?sqp=CJCs9psGir7X7AMGCIWR85sG&rs=AOn4CLDjciDpEaaHSr4xDxNo30wkoX0NlQ&v=1669122181",
+            "width": 640,
+            "height": 640
+          },
+          "maxres": {
+            "url": "https://i9.ytimg.com/s_p/RDCLAK5uy_kT-sIJz2O-hpkxwjosN2hMt9Y5xevcPYI/maxresdefault.jpg?sqp=CJCs9psGir7X7AMGCIWR85sG&rs=AOn4CLDz_awQxOtXdvUJEYS0P3Gg9cfccg&v=1669122181",
+            "width": 1200,
+            "height": 1200
+          }
+        },
+        "channelTitle": "YouTube",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Chill Korean Hip-Hop/R&B",
+          "description": "Feel the mellow-urban vibe of Seoul with Korean Hip-Hop/R&B. #hiphop #rnb #chill"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "youtube#playlistListResponse",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#playlist",
+      "id": "PL6I7byEh1DBnAZNIN3dlf2e2WoUNqicsx",
+      "snippet": {
+        "publishedAt": "2020-09-21T08:23:54Z",
+        "channelId": "UCmBqBxouLDy3Mfu4XzESuAA",
+        "title": "가을 플레이리스트 🍂AUTUMN",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/RYZMbzksrKA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "In The Indie _ 인디인디",
+        "localized": {
+          "title": "가을 플레이리스트 🍂AUTUMN",
+          "description": ""
+        }
+      }
+    }
+  ]
+}

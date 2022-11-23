@@ -1,45 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import themaSearchConts from "../utils/themaSearchConts.json";
 
-const ThemaSearchConts = () => {
+const ThemaSearchConts = ({ list }) => {
+  const [data, setData] = useState(themaSearchConts);
+
+  // useEffect(() => {
+  //   const config = {
+  //     method: "get",
+  //     url: `https://youtube-v31.p.rapidapi.com/playlists?id=${list}&part=snippet`,
+  //     headers: {
+  //       "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
+  //       "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+  //     },
+  //   };
+
+  //   axios(config)
+  //     .then(function (response) {
+  //       setData(response.data);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // }, []);
+
   return (
-    <div className="bgm__inner">
+    <>
       <figure className="bgm">
-        <Link to="/themaSearchDetail">
-          <img src="./assets/img/card/b01.png" alt="b01" />
+        <Link
+          to={`/themaSearch/${list}?src=${data.items[0].snippet.thumbnails.maxres.url}&${data.items[0].snippet.localized.title}`}
+        >
+          <img
+            src={data.items[0].snippet.thumbnails.maxres.url}
+            alt={data.items[0].snippet.localized.title}
+          />
           <figcaption>
             <p className="bgm__title">
-              일상에 지친 당신을 위한 노래 즐거운 노래 모음
+              {data.items[0].snippet.localized.title}
             </p>
-            <p className="bgm__tag">BGM</p>
+            <p className="bgm__tag">{data.items[0].snippet.channelTitle}</p>
           </figcaption>
         </Link>
       </figure>
-
-      <figure className="bgm">
-        <Link to="/themaSearchDetail">
-          <img src="./assets/img/card/b02.png" alt="b02" />
-          <figcaption>
-            <p className="bgm__title">
-              기분이 편안해지는 귀여운 음악 모음(1시간)
-            </p>
-            <p className="bgm__tag">오늘의 일기</p>
-          </figcaption>
-        </Link>
-      </figure>
-
-      <figure className="bgm">
-        <Link to="/themaSearchDetail">
-          <img src="./assets/img/card/b03.png" alt="b03" />
-          <figcaption>
-            <p className="bgm__title">
-              뉴에이지 피아노 힐링 음악 모음 | 공부, 작업 휴식...
-            </p>
-            <p className="bgm__tag">DUGGY MUSIC</p>
-          </figcaption>
-        </Link>
-      </figure>
-    </div>
+    </>
   );
 };
 

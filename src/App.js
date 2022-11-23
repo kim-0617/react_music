@@ -21,11 +21,11 @@ function App() {
         <Route path="/tagSearch" element={<TagSearch />}></Route>
         <Route path="/themaSearch" element={<ThemaSearch />}></Route>
         <Route
-          path="/themaSearchDetail"
+          path="/themaSearch/:name"
           element={<ThemaSearchDetail />}
         ></Route>
-        <Route path="/artistSearch" element={<ArtistSearch />}></Route>
-        <Route path="/artistView" element={<ArtistView />}></Route>
+        <Route path="/artistSearch/:name" element={<ArtistSearch />}></Route>
+        <Route path="/ArtistView/:name" element={<ArtistView />}></Route>
       </Routes>
       <FooterCont />
     </BrowserRouter>

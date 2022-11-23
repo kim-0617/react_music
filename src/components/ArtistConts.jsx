@@ -1,19 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const ArtistConts = () => {
+const VideoConts = ({ video, name }) => {
+  return (
+    <>
+      <div className="artist__pop">
+        <Link to={`/artistView/${video.id}`}>
+          <img src={video.thumbnail} alt={video.name} />
+          <div className="artist__desc">
+            <p className="tit">{video.title}</p>
+            <p className="art">{name}</p>
+          </div>
+        </Link>
+      </div>
+    </>
+  );
+};
+
+const ArtistConts = ({ videos, name }) => {
   return (
     <div className="artist__cont">
-      <h3>BLACKPINK</h3>
+      <h3>{name}</h3>
       <div className="artist__result">
-        <div className="artist__pop">
-          <a href="/artistView">
-            <img src="assets/img/artist.jpg" alt="마지막처럼" />
-            <div className="artist__desc">
-              <p className="tit">마지막처럼</p>
-              <p className="art">BLACKPINK</p>
-            </div>
-          </a>
-        </div>
+        {videos.map((video, index) => (
+          <VideoConts key={video.id} video={video} name={name} />
+        ))}
       </div>
     </div>
   );

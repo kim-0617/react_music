@@ -1,0 +1,414 @@
+{
+  "ok": true,
+  "result": {
+    "songs": [
+      {
+        "id": "950BdJKBhGo",
+        "name": "BLACKPINK - Shut Down",
+        "title": "Shut Down",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_J7wVS5GlYZK",
+          "name": "BORN PINK"
+        },
+        "duration": 176,
+        "thumbnail": "https://lh3.googleusercontent.com/GriPb4nuy0ykhBVO0s1K0aYQBrbosi_ML1F0HYOCrHouOFTpUIm1zijUz7cZVNoVfd_XPWm_DEEhGVk=w120-h120-l90-rj"
+      },
+      {
+        "id": "4N15045PHEA",
+        "name": "BLACKPINK - Pink Venom",
+        "title": "Pink Venom",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_DZezN30qL1V",
+          "name": "Pink Venom"
+        },
+        "duration": 187,
+        "thumbnail": "https://lh3.googleusercontent.com/OeyObLE4rESv5Qu7MruXwBWsCbmXvpJl8652fUKrVzmt6SNYCvZIugmGxHRgBHN_XUSODkH3x6plN_tc=w120-h120-l90-rj"
+      },
+      {
+        "id": "POqmmUNX4lA",
+        "name": "BLACKPINK - Hard to Love",
+        "title": "Hard to Love",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_J7wVS5GlYZK",
+          "name": "BORN PINK"
+        },
+        "duration": 163,
+        "thumbnail": "https://lh3.googleusercontent.com/GriPb4nuy0ykhBVO0s1K0aYQBrbosi_ML1F0HYOCrHouOFTpUIm1zijUz7cZVNoVfd_XPWm_DEEhGVk=w120-h120-l90-rj"
+      },
+      {
+        "id": "18nDrsoii5M",
+        "name": "BLACKPINK - BOOMBAYAH",
+        "title": "BOOMBAYAH",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_uw6ZciTZeCR",
+          "name": "SQUARE ONE"
+        },
+        "duration": 240,
+        "thumbnail": "https://lh3.googleusercontent.com/f2yP9sVcYj-_opQWJ0prOY5jbt_rBGHrpe9jPD1mxaEpI8ZL1SrkCpzbvS42DhyYNABMRqO7892F9_HL=w120-h120-l90-rj"
+      },
+      {
+        "id": "8mA6jIeojnk",
+        "name": "BLACKPINK - How You Like That",
+        "title": "How You Like That",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_UhcqmNpCCt2",
+          "name": "How You Like That"
+        },
+        "duration": 182,
+        "thumbnail": "https://lh3.googleusercontent.com/LtzwLew9W3Igam672B19Vp7Kotr_tjTSkEY4L4DNjAvIkfLOxs34jYaAUJ3cCd5SUIzHwJfPyDIlHl_N=w120-h120-l90-rj"
+      },
+      {
+        "id": "D8RZbI1jfQ0",
+        "name": "BLACKPINK - Lovesick Girls",
+        "title": "Lovesick Girls",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_5akfGIsrUrJ",
+          "name": "THE ALBUM"
+        },
+        "duration": 193,
+        "thumbnail": "https://lh3.googleusercontent.com/ZKINUFCtfMUKB4CH4wJcQyHi6-bmuHz2exRBV6SORUd96KsC1jo2nrDImg2zlLnvHgJPGBxreYVjunGycg=w120-h120-l90-rj"
+      },
+      {
+        "id": "IPzouyj7FLA",
+        "name": "BLACKPINK - 뚜두뚜두 DDU-DU DDU-DU",
+        "title": "뚜두뚜두 DDU-DU DDU-DU",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_pN3RFYTTNWu",
+          "name": "SQUARE UP"
+        },
+        "duration": 210,
+        "thumbnail": "https://lh3.googleusercontent.com/T98_Xesfh5fG5O0RymjZ8UziFE9VhfjgGJ_G7VsKXuiOau7yAi2A6yM6SImKj9GmiJXA7EVi7doZAHlefA=w120-h120-l90-rj"
+      },
+      {
+        "id": "qCDPprTDkJE",
+        "name": "BLACKPINK - Pink Venom",
+        "title": "Pink Venom",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_J7wVS5GlYZK",
+          "name": "BORN PINK"
+        },
+        "duration": 187,
+        "thumbnail": "https://lh3.googleusercontent.com/GriPb4nuy0ykhBVO0s1K0aYQBrbosi_ML1F0HYOCrHouOFTpUIm1zijUz7cZVNoVfd_XPWm_DEEhGVk=w120-h120-l90-rj"
+      },
+      {
+        "id": "9MbXeqCbS4Q",
+        "name": "BLACKPINK - As If It's Your Last",
+        "title": "As If It's Your Last",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_iWjoPKhT878",
+          "name": "As If It's Your Last"
+        },
+        "duration": 213,
+        "thumbnail": "https://lh3.googleusercontent.com/FUz45S6Nmeec1qEpMfcCN_9PvjdLIKffPsi5n7A6KB3rz0eXIRtxd14On1Bgn65T30c_u7LnzkqINAIW=w120-h120-l90-rj"
+      },
+      {
+        "id": "fpimnj4SNjQ",
+        "name": "BLACKPINK - See U Later",
+        "title": "See U Later",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_pN3RFYTTNWu",
+          "name": "SQUARE UP"
+        },
+        "duration": 199,
+        "thumbnail": "https://lh3.googleusercontent.com/T98_Xesfh5fG5O0RymjZ8UziFE9VhfjgGJ_G7VsKXuiOau7yAi2A6yM6SImKj9GmiJXA7EVi7doZAHlefA=w120-h120-l90-rj"
+      },
+      {
+        "id": "x0-q6-PBpPU",
+        "name": "BLACKPINK - WHISTLE",
+        "title": "WHISTLE",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_uw6ZciTZeCR",
+          "name": "SQUARE ONE"
+        },
+        "duration": 211,
+        "thumbnail": "https://lh3.googleusercontent.com/f2yP9sVcYj-_opQWJ0prOY5jbt_rBGHrpe9jPD1mxaEpI8ZL1SrkCpzbvS42DhyYNABMRqO7892F9_HL=w120-h120-l90-rj"
+      },
+      {
+        "id": "ei0k_1Uro-U",
+        "name": "BLACKPINK - 불장난(Playing With Fire)",
+        "title": "불장난(Playing With Fire)",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_DorKD3pAptk",
+          "name": "Square Two"
+        },
+        "duration": 198,
+        "thumbnail": "https://lh3.googleusercontent.com/KzAyQjgDWOPjKIyIWlzhYEYRSdMGBqyhshANu_oZmkKbD20Qp76syLJALNFNIuTW9uHs-cO-K9uNdEph=w120-h120-l90-rj"
+      },
+      {
+        "id": "-gibBYpzZbI",
+        "name": "BLACKPINK - Forever Young",
+        "title": "Forever Young",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_pN3RFYTTNWu",
+          "name": "SQUARE UP"
+        },
+        "duration": 238,
+        "thumbnail": "https://lh3.googleusercontent.com/T98_Xesfh5fG5O0RymjZ8UziFE9VhfjgGJ_G7VsKXuiOau7yAi2A6yM6SImKj9GmiJXA7EVi7doZAHlefA=w120-h120-l90-rj"
+      },
+      {
+        "id": "z7e54L8usac",
+        "name": "BLACKPINK - Kill This Love",
+        "title": "Kill This Love",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_a8dPYoKfrQ4",
+          "name": "KILL THIS LOVE"
+        },
+        "duration": 190,
+        "thumbnail": "https://lh3.googleusercontent.com/a4HLoL-xV0NngaNLLlJ0NjWeHeiAmHv2CF-HmE8AWPuoTc60cwzfCFaE5e9lNM2aYCFd6BmXUMfJj8o=w120-h120-l90-rj"
+      },
+      {
+        "id": "4-poKFhIKeo",
+        "name": "BLACKPINK - Tally",
+        "title": "Tally",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_J7wVS5GlYZK",
+          "name": "BORN PINK"
+        },
+        "duration": 185,
+        "thumbnail": "https://lh3.googleusercontent.com/GriPb4nuy0ykhBVO0s1K0aYQBrbosi_ML1F0HYOCrHouOFTpUIm1zijUz7cZVNoVfd_XPWm_DEEhGVk=w120-h120-l90-rj"
+      },
+      {
+        "id": "EZXFpnBCZbM",
+        "name": "BLACKPINK - Hard to Love",
+        "title": "Hard to Love",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_ODbk3DwVCqR",
+          "name": "BORN PINK"
+        },
+        "duration": 163,
+        "thumbnail": "https://lh3.googleusercontent.com/dN5TibspwgdasbXInBwuXO5quHw5kPJxxufl_DY1CYhhp6_Ot9tkhYbFXPEUQ_etG1QCND1AoGiP_DgBfQ=w120-h120-l90-rj"
+      },
+      {
+        "id": "oMsizmQ9l5c",
+        "name": "BLACKPINK - Typa Girl",
+        "title": "Typa Girl",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_J7wVS5GlYZK",
+          "name": "BORN PINK"
+        },
+        "duration": 180,
+        "thumbnail": "https://lh3.googleusercontent.com/GriPb4nuy0ykhBVO0s1K0aYQBrbosi_ML1F0HYOCrHouOFTpUIm1zijUz7cZVNoVfd_XPWm_DEEhGVk=w120-h120-l90-rj"
+      },
+      {
+        "id": "F8c8f2nK82w",
+        "name": "BLACKPINK - Pretty Savage",
+        "title": "Pretty Savage",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_5akfGIsrUrJ",
+          "name": "THE ALBUM"
+        },
+        "duration": 200,
+        "thumbnail": "https://lh3.googleusercontent.com/ZKINUFCtfMUKB4CH4wJcQyHi6-bmuHz2exRBV6SORUd96KsC1jo2nrDImg2zlLnvHgJPGBxreYVjunGycg=w120-h120-l90-rj"
+      },
+      {
+        "id": "QVM00XI_dU8",
+        "name": "BLACKPINK - Don't Know What to Do",
+        "title": "Don't Know What to Do",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_a8dPYoKfrQ4",
+          "name": "KILL THIS LOVE"
+        },
+        "duration": 202,
+        "thumbnail": "https://lh3.googleusercontent.com/a4HLoL-xV0NngaNLLlJ0NjWeHeiAmHv2CF-HmE8AWPuoTc60cwzfCFaE5e9lNM2aYCFd6BmXUMfJj8o=w120-h120-l90-rj"
+      },
+      {
+        "id": "cA6XDR90RKU",
+        "name": "BLACKPINK - Yeah Yeah Yeah",
+        "title": "Yeah Yeah Yeah",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": {
+          "album_id": "MPREb_J7wVS5GlYZK",
+          "name": "BORN PINK"
+        },
+        "duration": 179,
+        "thumbnail": "https://lh3.googleusercontent.com/GriPb4nuy0ykhBVO0s1K0aYQBrbosi_ML1F0HYOCrHouOFTpUIm1zijUz7cZVNoVfd_XPWm_DEEhGVk=w120-h120-l90-rj"
+      }
+    ],
+    "videos": [
+      {
+        "id": "POe9SOEKotk",
+        "title": "Shut Down",
+        "duration": 181
+      },
+      {
+        "id": "gQlMMD8auMs",
+        "title": "Pink Venom",
+        "duration": 194
+      },
+      {
+        "id": "32si5cfrCNc",
+        "title": "How You Like That (Live)",
+        "duration": 181
+      },
+      {
+        "id": "IHNzOHi8sJs",
+        "title": "DDU-DU DDU-DU",
+        "duration": 216
+      },
+      {
+        "id": "PjrAwC4TIPA",
+        "title": "Shut Down",
+        "duration": 181
+      },
+      {
+        "id": "2S24-y0Ij3Y",
+        "title": "Kill This Love",
+        "duration": 194
+      },
+      {
+        "id": "Amq-qlqbjYA",
+        "title": "AS IF IT'S YOUR LAST -KR ver.-",
+        "duration": 217
+      },
+      {
+        "id": "5dD-Mkfuxlk",
+        "title": "Pink Venom (Live)",
+        "duration": 226
+      },
+      {
+        "id": "4fikvcuirtY",
+        "title": "BLACKPINK(블랙핑크) - Shut Down @인기가요 inkigayo 20220925",
+        "duration": 263
+      },
+      {
+        "id": "ioNng23DkIM",
+        "title": "How You Like That",
+        "duration": 184
+      },
+      {
+        "id": "RFMi3v0TXP8",
+        "title": "Pink Venom",
+        "duration": 196
+      },
+      {
+        "id": "dyRsYk0LyA8",
+        "title": "Lovesick Girls",
+        "duration": 202
+      },
+      {
+        "id": "7WyHtSlvHD4",
+        "title": "Ready For Love",
+        "duration": 187
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "ok": true,
+  "result": {
+    "title": "BORN PINK",
+    "thumbnail": "https://lh3.googleusercontent.com/GriPb4nuy0ykhBVO0s1K0aYQBrbosi_ML1F0HYOCrHouOFTpUIm1zijUz7cZVNoVfd_XPWm_DEEhGVk=w544-h544-l90-rj",
+    "artists": [
+      {
+        "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+        "name": "BLACKPINK"
+      }
+    ],
+    "year": "2022",
+    "songs": [
+      {
+        "id": "gQlMMD8auMs",
+        "name": "BLACKPINK - Pink Venom",
+        "title": "Pink Venom",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 187,
+        "thumbnail": null
+      },
+      {
+        "id": "POe9SOEKotk",
+        "name": "BLACKPINK - Shut Down",
+        "title": "Shut Down",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 176,
+        "thumbnail": null
+      },
+      {
+        "id": "UhxW9Njqqu0",
+        "name": "BLACKPINK - Typa Girl",
+        "title": "Typa Girl",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 180,
+        "thumbnail": null
+      },
+      {
+        "id": "wQTjv-Xo1gY",
+        "name": "BLACKPINK - Yeah Yeah Yeah",
+        "title": "Yeah Yeah Yeah",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 179,
+        "thumbnail": null
+      },
+      {
+        "id": "7Hr3p1BHC_E",
+        "name": "BLACKPINK - Hard to Love",
+        "title": "Hard to Love",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 163,
+        "thumbnail": null
+      },
+      {
+        "id": "Nvg0kCAHNMo",
+        "name": "BLACKPINK - The Happiest Girl",
+        "title": "The Happiest Girl",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 223,
+        "thumbnail": null
+      },
+      {
+        "id": "VQo4hyWfBQ4",
+        "name": "BLACKPINK - Tally",
+        "title": "Tally",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 185,
+        "thumbnail": null
+      },
+      {
+        "id": "7WyHtSlvHD4",
+        "name": "BLACKPINK - Ready For Love",
+        "title": "Ready For Love",
+        "artists": [
+          {
+            "artist_id": "UCkbbMCA40i18i7UdjayMPAg",
+            "name": "BLACKPINK"
+          }
+        ],
+        "album": "BORN PINK",
+        "duration": 185,
+        "thumbnail": null
+      }
+    ],
+    "duration": 1478
+  }
+}
