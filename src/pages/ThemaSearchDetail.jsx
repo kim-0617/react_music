@@ -11,25 +11,25 @@ const ThemaSearchDetail = () => {
   const src = query[0].replace("?src=", "");
   const title = decodeURI(query[1].replace("%20", " "));
 
-  const [data, setData] = useState(themaSearchDetail.items);
-  // useEffect(() => {
-  //   const config = {
-  //     method: "get",
-  //     url: `https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${name}&part=snippet&maxResults=10`,
-  //     headers: {
-  //       "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
-  //       "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
-  //     },
-  //   };
+  const [data, setData] = useState();
+  useEffect(() => {
+    const config = {
+      method: "get",
+      url: `https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${name}&part=snippet&maxResults=10`,
+      headers: {
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+      },
+    };
 
-  //   axios(config)
-  //     .then(function (response) {
-  //       setData(response.data);
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
-  // }, []);
+    axios(config)
+      .then(function (response) {
+        setData(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <DataContext.Provider value={data}>

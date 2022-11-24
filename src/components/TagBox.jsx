@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import axios from "axios";
+import Loader from "./Loader";
 
 function TagBox({ video, index }) {
   const [info, setInfo] = useState(null);
@@ -47,28 +48,22 @@ function TagBox({ video, index }) {
 
   useEffect(() => {
     if (!videoID) return;
-    const myHeaders = new Headers();
-    myHeaders.append(
-      "X-RapidAPI-Key",
-      "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602"
-    );
-    myHeaders.append("X-RapidAPI-Host", "youtube-v31.p.rapidapi.com");
-
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow",
+    var config = {
+      method: "get",
+      url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${videoID}`,
+      headers: {
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+      },
     };
-    fetch(
-      `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${videoID}`,
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((result) => setInfo(result?.items[0]))
-      .catch((error) => console.log("error", error));
+    const fectchResult = async () => {
+      const response = await axios(config);
+      setInfo(response.data.items[0]);
+    };
+    fectchResult();
   }, [videoID]);
 
-  if (!info?.snippet) return <div>Loading...</div>;
+  if (!info?.snippet) return <Loader />;
 
   return (
     <div className={`tag__box show`}>

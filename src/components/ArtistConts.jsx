@@ -5,7 +5,7 @@ const VideoConts = ({ video, name }) => {
   return (
     <>
       <div className="artist__pop">
-        <Link to={`/artistView/${video.id}`}>
+        <Link to={`/artistView/${video.album.album_id}?&id=${video.id}`}>
           <img src={video.thumbnail} alt={video.name} />
           <div className="artist__desc">
             <p className="tit">{video.title}</p>

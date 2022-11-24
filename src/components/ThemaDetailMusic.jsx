@@ -36,7 +36,7 @@ function getTimeStringSeconds(seconds) {
 
 function ThemaDetailMusic({ detail, index }) {
   // console.log(detail);
-  const [data, setData] = useState(themaSearchDetailSong.items[0]);
+  const [data, setData] = useState();
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(1);
 
@@ -70,29 +70,29 @@ function ThemaDetailMusic({ detail, index }) {
     if (total) {
       setTotal(getTimeStringSeconds(data.contentDetails.duration)[1]);
     }
-    console.log(total);
+
     setSec((prev) => prev++);
     // console.log(getTimeStringSeconds(data.contentDetails.duration)[1]);
   }, [sec, total]);
 
-  // useEffect(() => {
-  //   const config = {
-  //     method: "get",
-  //     url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet,statistics&id=${detail.snippet.resourceId.videoId}`,
-  //     headers: {
-  //       "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
-  //       "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
-  //     },
-  //   };
+  useEffect(() => {
+    const config = {
+      method: "get",
+      url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet,statistics&id=${detail.snippet.resourceId.videoId}`,
+      headers: {
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+      },
+    };
 
-  //   axios(config)
-  //     .then(function (response) {
-  //       setData(response.data.items[0]));
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
-  // }, []);
+    axios(config)
+      .then(function (response) {
+        setData(response.data.items[0]);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <div className="thema__search__detail__box">

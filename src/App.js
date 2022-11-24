@@ -18,7 +18,7 @@ function App() {
       <HeaderCont />
       <Routes>
         <Route path="/" element={<MainConts />}></Route>
-        <Route path="/tagSearch" element={<TagSearch />}></Route>
+        <Route path="/tagSearch/*" element={<TagSearch />}></Route>
         <Route path="/themaSearch" element={<ThemaSearch />}></Route>
         <Route
           path="/themaSearch/:name"

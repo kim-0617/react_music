@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import ArtistViewSlider from "./ArtistViewSlider";
 
-const ViewSlider = ({ songs }) => {
+const ViewSlider = ({ songs, id }) => {
   return (
     <div className="cont__slider">
       <Swiper
@@ -23,7 +23,7 @@ const ViewSlider = ({ songs }) => {
         {songs.map((data, index) => {
           return (
             <SwiperSlide key={index}>
-              <ArtistViewSlider data={data} />
+              <ArtistViewSlider data={data} id={id} />
             </SwiperSlide>
           );
         })}

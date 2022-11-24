@@ -2,60 +2,72 @@ import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { ViewSlider } from "../components";
+import { Loader, ViewSlider } from "../components";
+import { UrlContext } from "../context/UrlContext";
 import artistDetail from "../utils/artistDetail.json";
 
 const ArtistView = () => {
   const { name } = useParams();
-  const [detail, setDetail] = useState(artistDetail.result);
+  const [detail, setDetail] = useState(null);
+  const [url, setUrl] = useState(
+    `https://www.youtube.com/watch?v=${window.location.search.replace(
+      "?&id=",
+      ""
+    )}`
+  );
+  const [text, setText] = useState("");
 
-  // useEffect(() => {
-  //   var config = {
-  //     method: "get",
-  //     url: `https://youtube-music1.p.rapidapi.com/v2/get_album?album_id=${name}`,
-  //     headers: {
-  //       "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
-  //       "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
-  //     },
-  //   };
+  useEffect(() => {
+    var config = {
+      method: "get",
+      url: `https://youtube-music1.p.rapidapi.com/v2/get_album?album_id=${name}`,
+      headers: {
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+        "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
+      },
+    };
 
-  //   axios(config)
-  //     .then(function (response) {
-  //       setDetail(JSON.stringify(response.data));
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
-  // }, [name]);
+    axios(config)
+      .then(function (response) {
+        setDetail(response.data.result);
+        setText(
+          `${response.data.result.title} - ${response.data.result.artists[0].name}`
+        );
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, [name]);
 
+  if (!detail) return <Loader />;
   return (
-    <section id="artist__view">
-      <div className="artist__inner container">
-        <h2 className="title">아티스트 검색</h2>
-        <div className="artist__play">
-          <h3>{detail.artists[0].name}</h3>
-          <div className="view__cont">
-            <div className="cont__main">
-              <ReactPlayer
-                url={`https://www.youtube.com/watch?v=${name}`}
-                width={"100%"}
-                height={600}
-                controls
-              />
-              <div className="view__desc">
-                <em>
-                  <p className="view__title">{`${detail.title} - ${detail.artists[0].name}`}</p>
-                  <p className="view__channel">관련 영상</p>
-                </em>
+    <UrlContext.Provider value={{ setUrl, setText }}>
+      <section id="artist__view">
+        <div className="artist__inner container">
+          <h2 className="title">아티스트 검색</h2>
+          <div className="artist__play">
+            <h3>{detail.artists[0].name}</h3>
+            <div className="view__cont">
+              <div className="cont__main">
+                <ReactPlayer url={url} width={"100%"} height={600} controls />
+                <div className="view__desc">
+                  <em>
+                    <p className="view__title">{text}</p>
+                    <p className="view__channel">관련 영상</p>
+                  </em>
+                </div>
               </div>
-            </div>
-            <div className="cont__sub">
-              <ViewSlider songs={detail.songs} />
+              <div className="cont__sub">
+                <ViewSlider
+                  songs={detail.songs}
+                  id={window.location.search.replace("?&id=", "")}
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </UrlContext.Provider>
   );
 };
 

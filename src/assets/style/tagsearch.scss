@@ -104,6 +104,12 @@
         display: inline-block;
         margin-right: 20px;
 
+        &.active {
+          a {
+            color: var(--font-colorSub1);
+          }
+        }
+
         a {
           color: #f5f5f5;
         }
@@ -184,6 +190,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+
+        .player {
+          position: absolute;
+          left: 10px;
+          top: 0px;
+          opacity: 0;
+        }
 
         img {
           display: block;
