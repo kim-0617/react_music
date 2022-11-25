@@ -47,7 +47,7 @@ const ThemaSearchDetail = () => {
 
   const onClickVolume = (e) => {
     let progressWidth = e.currentTarget.clientWidth; // 진행바 전체 길이
-    let clickedOffsetX = e.clientX - 135; // 진행바 기준으로 측정되는 X좌표
+    let clickedOffsetX = e.nativeEvent.offsetX; // 진행바 기준으로 측정되는 X좌표
 
     setVolume((clickedOffsetX / progressWidth) * 100);
   };

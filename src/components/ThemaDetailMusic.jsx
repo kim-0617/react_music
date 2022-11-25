@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { getDownUrl } from "./TagBox";
@@ -47,6 +47,8 @@ function ThemaDetailMusic({ detail, index, volume }) {
   const [data, setData] = useState(null);
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(null);
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef(null);
 
   const onClickDown = (e) => {
     e.preventDefault();
@@ -63,6 +65,24 @@ function ThemaDetailMusic({ detail, index, volume }) {
     );
   };
 
+  const onClickBar = (e) => {
+    let progressWidth = e.currentTarget.clientWidth; // 진행바 전체 길이
+    let clickedOffsetX = e.nativeEvent.offsetX; // 진행바 기준으로 측정되는 X좌표
+    // console.log(playing, videoRef.current.player.isPlaying)
+    // console.log("click", progressWidth, clickedOffsetX);
+    // console.log("click", (clickedOffsetX / progressWidth) * 100);
+    e.currentTarget.firstElementChild.style.width = `${(clickedOffsetX / progressWidth) * 100
+      }%`;
+    setSec(
+      (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
+    );
+    forwardHandler(
+      (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
+    );
+    setPlaying(true);
+    videoRef.current.player.isPlaying = true;
+  };
+
   const onReady = function () {
     document
       .querySelectorAll(".player")
@@ -73,26 +93,33 @@ function ThemaDetailMusic({ detail, index, volume }) {
     setSec((prevState) => (prevState += 1));
   };
 
+  const forwardHandler = (time) => {
+    // console.log("ref호출", videoRef.current);
+    videoRef.current.seekTo(time);
+    setPlaying(true);
+    videoRef.current.player.isPlaying = true;
+  };
+
   const onPause = (e) => {
     document
       .querySelectorAll(".start")
-      [index].setAttribute("src", "../assets/img/start.svg");
+    [index].setAttribute("src", "../assets/img/start.svg");
   };
 
   const onPlay = (e) => {
     document
       .querySelectorAll(".start")
-      [index].setAttribute("src", "../assets/img/playing.svg");
+    [index].setAttribute("src", "../assets/img/playing.svg");
   };
 
   const onEnded = (e) => {
     setSec(0);
     document
       .querySelectorAll(".start")
-      [index].setAttribute(
-        "src",
-        "https://raw.githubusercontent.com/kim-0617/react_music/124c9515d8cc5b4ccbb6d5f432bceb0c9ee82c50/src/assets/img/start.svg"
-      );
+    [index].setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/kim-0617/react_music/124c9515d8cc5b4ccbb6d5f432bceb0c9ee82c50/src/assets/img/start.svg"
+    );
   };
 
   useEffect(() => {
@@ -150,6 +177,7 @@ function ThemaDetailMusic({ detail, index, volume }) {
         <div className="duration__top">
           <img src="../assets/img/start.svg" alt="start" className="start" />
           <ReactPlayer
+            ref={videoRef}
             className="player"
             url={`https://www.youtube.com/watch?v=${data.id}`}
             width={50}
@@ -161,9 +189,10 @@ function ThemaDetailMusic({ detail, index, volume }) {
             onReady={onReady}
             onEnded={onEnded}
             volume={volume / 100}
+            playing={playing}
             style={{ left: "-500px", transition: "6000ms" }}
           />
-          <div className="progress">
+          <div className="progress" onClick={onClickBar}>
             <div className="bar" style={{ width: `${(sec / total) * 100}%` }}>
               <div className="bar__btn"></div>
             </div>

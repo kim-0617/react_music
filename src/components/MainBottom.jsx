@@ -5,7 +5,7 @@ import chart from "../utils/chart50.json";
 import Loader from "./Loader";
 
 const MainBottom = () => {
-  const [videos, setVideos] = useState(chart.items);
+  const [videos, setVideos] = useState(chart.items.slice(0, 5));
 
   // useEffect(() => {
   //   const fetchResults = async () => {
@@ -41,7 +41,7 @@ const MainBottom = () => {
         <div className="top__music__list">
           <h2>Music List</h2>
           <div className="tag__music">
-            {videos.length &&
+            {videos?.length &&
               videos
                 .slice(0, 5)
                 .map((video, index) => (

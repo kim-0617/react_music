@@ -23,10 +23,9 @@ function TagBox({ video, index }) {
   const [info, setInfo] = useState(song.items[0]);
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(null);
-  const [bar, setBar] = useState(0);
-  const [playing, setPlaying] = useState(false);
-  const videoID = video.snippet.resourceId.videoId;
   const videoRef = useRef(null);
+  const videoID = video.snippet.resourceId.videoId;
+  console.log(videoID)
 
   const onClickDown = (e) => {
     e.preventDefault();
@@ -45,30 +44,29 @@ function TagBox({ video, index }) {
 
   const onClickBar = (e) => {
     let progressWidth = e.currentTarget.clientWidth; // 진행바 전체 길이
-    let clickedOffsetX = e.clientX - 280; // 진행바 기준으로 측정되는 X좌표
-    console.log("click", progressWidth, clickedOffsetX);
+    let clickedOffsetX = e.nativeEvent.offsetX; // 진행바 기준으로 측정되는 X좌표
+    // console.log("click", progressWidth, clickedOffsetX);
     // console.log("click", (clickedOffsetX / progressWidth) * 100);
-    e.currentTarget.firstElementChild.style.width = `${
-      (clickedOffsetX / progressWidth) * 100
-    }%`;
+    e.currentTarget.firstElementChild.style.width = `${(clickedOffsetX / progressWidth) * 100
+      }%`;
     setSec(
       (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
     );
     forwardHandler(
       (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
     );
+    videoRef.current.player.isPlaying = true;
   };
 
   const onReady = function () {
     document
       .querySelectorAll(".player")
-      .forEach((frame) => (frame.style.left = "5px"));
+      .forEach((frame) => (frame.style.left = "8px"));
   };
 
   const forwardHandler = (time) => {
     // console.log("ref호출", videoRef.current);
     videoRef.current.seekTo(time);
-    setPlaying(true);
   };
 
   const onProgress = (e) => {
@@ -78,26 +76,26 @@ function TagBox({ video, index }) {
   const onPlay = (e) => {
     document
       .querySelectorAll(".start")
-      [index].setAttribute("src", "../assets/img/playing.svg");
+    [index].setAttribute("src", "../assets/img/playing.svg");
   };
 
   const onEnded = (e) => {
     setSec(0);
     document
       .querySelectorAll(".start")
-      [index].setAttribute("src", "../assets/img/start.svg");
+    [index].setAttribute("src", "../assets/img/start.svg");
   };
 
   const onPause = (e) => {
     document
       .querySelectorAll(".start")
-      [index].setAttribute("src", "../assets/img/start.svg");
+    [index].setAttribute("src", "../assets/img/start.svg");
   };
 
   useEffect(() => {
     let total = document
       .querySelectorAll(".duration__time")
-      [index]?.innerText.split(":");
+    [index]?.innerText.split(":");
     if (total) {
       setTotal(Number(total[0]) * 60 + Number(total[1]));
     }
@@ -142,7 +140,6 @@ function TagBox({ video, index }) {
             onPause={onPause}
             onReady={onReady}
             onEnded={onEnded}
-            playing={playing}
             style={{ left: "-500px", transition: "6000ms" }}
           />
 
@@ -154,13 +151,13 @@ function TagBox({ video, index }) {
           <div className="duration__time">
             {info?.contentDetails.duration.replace("PT", "").at(-3) === "M"
               ? info?.contentDetails.duration
-                  .replace("PT", "")
-                  .replace("M", ":0")
-                  .replace("S", "")
+                .replace("PT", "")
+                .replace("M", ":0")
+                .replace("S", "")
               : info?.contentDetails.duration
-                  .replace("PT", "")
-                  .replace("M", ":")
-                  .replace("S", "")}
+                .replace("PT", "")
+                .replace("M", ":")
+                .replace("S", "")}
           </div>
         </div>
 
