@@ -1,13 +1,11 @@
 import ThemaDetailMusic from "./ThemaDetailMusic";
-import React, { useContext } from "react";
-import { DataContext } from "../context/DataContext";
+import React from "react";
 
-const ThemaDetailConts = () => {
-  const data = useContext(DataContext);
-
+const ThemaDetailConts = ({ data }) => {
+  // console.log("받은 데이터", data);
   return (
     <div className="thema__search__detail__music">
-      {data.map((d, index) => (
+      {data.items.map((d, index) => (
         <ThemaDetailMusic key={d.id + index} detail={d} index={index} />
       ))}
     </div>

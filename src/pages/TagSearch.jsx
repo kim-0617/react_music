@@ -9,7 +9,6 @@ const TagSearch = () => {
   const [moving, setMoving] = useState(false);
   const [keyword, setKeyword] = useState("분위기");
   const [data, setData] = useState(null);
-  console.log("렌더링", keyword);
 
   useEffect(() => {
     const config = {
@@ -44,7 +43,7 @@ const TagSearch = () => {
   if (!data) return <Loader />;
 
   return (
-    <MoveContext.Provider value={{ setMoving, setKeyword }}>
+    <MoveContext.Provider value={{ setMoving, setKeyword, setData }}>
       <section id="tag__search">
         <div className="tag__inner container">
           <h2 className="title">태그 검색</h2>

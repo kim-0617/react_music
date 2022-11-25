@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import themaSearch from "../utils/themaSearch.json";
 import Loader from "./Loader";
+import themaSearch from "../utils/themaSearch.json";
 
 function RecomThema({ id }) {
   const [data, setData] = useState(null);
@@ -16,7 +16,7 @@ function RecomThema({ id }) {
         part: "snippet",
       },
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY1,
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };
@@ -32,12 +32,11 @@ function RecomThema({ id }) {
   }, []);
 
   if (!data) return <Loader />;
-  console.log(data);
 
   return (
     <figure className="play">
       <Link
-        to={`/themaSearch/${id}?src=${data.items[0].snippet.thumbnails.high.url}&${data.items[0].snippet.localized.title}`}
+        to={`/themaSearch/${id}?src=${data.items[0].snippet.thumbnails.standard.url}&${data.items[0].snippet.localized.title}`}
       >
         <img
           src={data.items[0].snippet.thumbnails.medium.url}

@@ -4,11 +4,30 @@ import ReactPlayer from "react-player";
 import axios from "axios";
 import Loader from "./Loader";
 
+export async function getDownUrl(videoID) {
+  const config = {
+    method: "get",
+    url: `https://youtube-music1.p.rapidapi.com/get_download_url?id=${videoID}&ext=mp3`,
+    headers: {
+      "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
+      "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
+    },
+  };
+
+  const response = await axios(config);
+  return response.data.result.download_url;
+}
+
 function TagBox({ video, index }) {
   const [info, setInfo] = useState(null);
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(null);
   const videoID = video.snippet.resourceId.videoId;
+
+  const onClickDown = (e) => {
+    e.preventDefault();
+    getDownUrl(videoID).then((result) => (window.location.href = result));
+  };
 
   const onClickPlayer = (e) => {
     e.preventDefault();
@@ -18,6 +37,12 @@ function TagBox({ video, index }) {
       '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
       "*"
     );
+  };
+
+  const onReady = function () {
+    document
+      .querySelectorAll(".player")
+      .forEach((frame) => (frame.style.left = "5px"));
   };
 
   const onProgress = (e) => {
@@ -48,7 +73,7 @@ function TagBox({ video, index }) {
 
   useEffect(() => {
     if (!videoID) return;
-    var config = {
+    const config = {
       method: "get",
       url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${videoID}`,
       headers: {
@@ -80,6 +105,8 @@ function TagBox({ video, index }) {
             onProgress={onProgress}
             onPlay={onPlay}
             onPause={onPause}
+            onReady={onReady}
+            style={{ left: "-500px", transition: "6000ms" }}
           />
 
           <div className="progress">
@@ -101,10 +128,8 @@ function TagBox({ video, index }) {
         </div>
 
         <div className="duration__bot">
-          <p>
-            {info.snippet.title.slice(6)} &nbsp;
-            <span>{info?.snippet.description.split(" ")[0]}</span>
-          </p>
+          <p className="title">{info.snippet.title}</p>
+          <span className="desc">{info?.snippet.description}</span>
         </div>
       </div>
       <div className="tag__tags">
@@ -117,7 +142,7 @@ function TagBox({ video, index }) {
         </ul>
       </div>
       <div className="tag__icon">
-        <Link to="/" title="play" className="play"></Link>
+        <Link to="/" title="play" className="play" onClick={onClickDown}></Link>
         <Link
           to="/"
           title="stop"

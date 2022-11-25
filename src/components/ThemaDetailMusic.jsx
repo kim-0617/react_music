@@ -2,10 +2,14 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
+import { getDownUrl } from "./TagBox";
+import Loader from "./Loader";
 import themaSearchDetailSong from "../utils/themaSearchDetailSong.json";
 
 function getTimeStringSeconds(seconds) {
-  let hour, min, sec;
+  let hour = 0,
+    min = 0,
+    sec = 0;
   seconds = seconds.replace("PT", "");
 
   if (seconds.includes("H")) {
@@ -31,14 +35,23 @@ function getTimeStringSeconds(seconds) {
   if (hour.toString().length == 1) hour = "0" + hour;
   if (min.toString().length == 1) min = "0" + min;
   if (sec.toString().length == 1) sec = "0" + sec;
-  return [hour + ":" + min + ":" + sec, seconds];
+
+  if (Number(hour)) {
+    return [hour + ":" + min + ":" + sec, seconds];
+  } else {
+    return [min + ":" + sec, seconds];
+  }
 }
 
 function ThemaDetailMusic({ detail, index }) {
-  // console.log(detail);
-  const [data, setData] = useState();
+  const [data, setData] = useState(null);
   const [sec, setSec] = useState(0);
-  const [total, setTotal] = useState(1);
+  const [total, setTotal] = useState(null);
+
+  const onClickDown = (e) => {
+    e.preventDefault();
+    getDownUrl(data.id).then((result) => (window.location.href = result));
+  };
 
   const onClickPlayer = (e) => {
     e.preventDefault();
@@ -48,6 +61,12 @@ function ThemaDetailMusic({ detail, index }) {
       '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
       "*"
     );
+  };
+
+  const onReady = function () {
+    document
+      .querySelectorAll(".player")
+      .forEach((frame) => (frame.style.left = "5px"));
   };
 
   const onProgress = (e) => {
@@ -67,7 +86,7 @@ function ThemaDetailMusic({ detail, index }) {
   };
 
   useEffect(() => {
-    if (total) {
+    if (data) {
       setTotal(getTimeStringSeconds(data.contentDetails.duration)[1]);
     }
 
@@ -76,23 +95,43 @@ function ThemaDetailMusic({ detail, index }) {
   }, [sec, total]);
 
   useEffect(() => {
+    // const config = {
+    //   method: "get",
+    //   url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet,statistics&id=${detail.snippet.resourceId.videoId}`,
+    //   headers: {
+    //     "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+    //     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+    //   },
+    // };
+
+    // axios(config)
+    //   .then(function (response) {
+    //     setData(response.data.items[0]);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
     const config = {
       method: "get",
       url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet,statistics&id=${detail.snippet.resourceId.videoId}`,
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };
 
-    axios(config)
-      .then(function (response) {
-        setData(response.data.items[0]);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    const axiosResult = async () => {
+      const response = await axios(config);
+      return response;
+    };
+    axiosResult()
+      .then((res) => setData(res.data.items[0]))
+      .catch((err) =>
+        console.log("아 못받아오네", detail.snippet.resourceId.videoId, err)
+      );
   }, []);
+
+  if (!data) return null;
 
   return (
     <div className="thema__search__detail__box">
@@ -109,6 +148,8 @@ function ThemaDetailMusic({ detail, index }) {
             onProgress={onProgress}
             onPause={onPause}
             onPlay={onPlay}
+            onReady={onReady}
+            style={{ left: "-500px", transition: "6000ms" }}
           />
           <div className="progress">
             <div className="bar" style={{ width: `${(sec / total) * 100}%` }}>
@@ -128,7 +169,7 @@ function ThemaDetailMusic({ detail, index }) {
 
       <div className="thema__tags">
         <ul>
-          {data.snippet.tags.slice(0, 3).map((tag, index) => (
+          {data?.snippet?.tags?.slice(0, 3).map((tag, index) => (
             <li key={index}>
               <Link to="/"># {tag}</Link>
             </li>
@@ -137,7 +178,7 @@ function ThemaDetailMusic({ detail, index }) {
       </div>
 
       <div className="thema__icon">
-        <Link to="/" title="play" className="play"></Link>
+        <Link to="/" title="play" className="play" onClick={onClickDown}></Link>
         <Link
           to="/"
           title="stop"

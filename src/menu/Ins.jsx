@@ -1,12 +1,15 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { MoveContext } from "../context/MoveContext";
 
 const insList = ["피아노", "드럼", "관악기", "일렉기타", "현악기"];
 function Ins() {
+  const { setMoving, setKeyword, setData } = useContext(MoveContext);
+
   const onActive = (e) => {
     if (e.target.tagName === "A") {
       setMoving(true);
+      setData(null);
       setKeyword(e.target.textContent.replace("# ", ""));
       [...e.currentTarget.parentElement.children].forEach((li, index) => {
         li.classList.remove("active");
@@ -15,8 +18,6 @@ function Ins() {
       setMoving(false);
     }
   };
-
-  const { setMoving, setKeyword } = useContext(MoveContext);
 
   return insList.map((m, index) => (
     <li key={m} onClick={onActive}>

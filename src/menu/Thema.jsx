@@ -4,9 +4,12 @@ import { MoveContext } from "../context/MoveContext";
 
 const themaList = ["비즈니스", "오프닝", "게임", "축하", "파티"];
 function Thema() {
+  const { setMoving, setKeyword, setData } = useContext(MoveContext);
+
   const onActive = (e) => {
     if (e.target.tagName === "A") {
       setMoving(true);
+      setData(null);
       setKeyword(e.target.textContent.replace("# ", "").concat("테마"));
       [...e.currentTarget.parentElement.children].forEach((li, index) => {
         li.classList.remove("active");
@@ -15,8 +18,6 @@ function Thema() {
       setMoving(false);
     }
   };
-
-  const { setMoving, setKeyword } = useContext(MoveContext);
 
   return themaList.map((m, index) => (
     <li key={m} onClick={onActive}>

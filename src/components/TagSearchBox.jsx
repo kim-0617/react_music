@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import Loader from "./Loader";
+import { getDownUrl } from "./TagBox";
 
 function getTimeStringSeconds(seconds) {
   let hour, min, sec;
@@ -24,6 +25,17 @@ function getTimeStringSeconds(seconds) {
 function TagSearchBox({ keyword, song, index }) {
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(1);
+
+  const onClickDown = (e) => {
+    e.preventDefault();
+    getDownUrl(song.id).then((result) => (window.location.href = result));
+  };
+
+  const onReady = function () {
+    document
+      .querySelectorAll(".player")
+      .forEach((frame) => (frame.style.left = "5px"));
+  };
 
   useEffect(() => {
     if (total) {
@@ -89,6 +101,8 @@ function TagSearchBox({ keyword, song, index }) {
               onProgress={onProgress}
               onPause={onPause}
               onPlay={onPlay}
+              onReady={onReady}
+              style={{ left: "-500px", transition: "6000ms" }}
             />
             <div className="progress">
               <div className="bar" style={{ width: `${(sec / total) * 100}%` }}>
@@ -110,13 +124,18 @@ function TagSearchBox({ keyword, song, index }) {
         <div className="tag__tags">
           <ul>
             <li>
-              <Link to={`/tagSearch/${keyword}`}>#{keyword}</Link>
+              <Link to={`/tagSearch/${keyword}`}># {keyword}</Link>
             </li>
           </ul>
         </div>
 
         <div className="tag__icon">
-          <i title="play" className="play"></i>
+          <Link
+            to="/"
+            title="play"
+            className="play"
+            onClick={onClickDown}
+          ></Link>
           <Link
             to="/"
             title="stop"

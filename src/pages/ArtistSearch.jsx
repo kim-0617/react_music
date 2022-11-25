@@ -59,7 +59,7 @@ const ArtistSearch = () => {
                   type: "fraction",
                 }}
                 navigation={true}
-                initialSlide={5}
+                initialSlide={1}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
               >

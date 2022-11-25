@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { MoveContext } from "../context/MoveContext";
 
@@ -14,11 +14,12 @@ const moodList = [
   "발랄한",
 ];
 function Mood() {
-  const { setMoving, setKeyword } = useContext(MoveContext);
+  const { setMoving, setKeyword, setData } = useContext(MoveContext);
 
   const onActive = (e) => {
     if (e.target.tagName === "A") {
       setMoving(true);
+      setData(null);
       setKeyword(e.target.textContent.replace("# ", "").concat("분위기"));
       [...e.currentTarget.parentElement.children].forEach((li, index) => {
         li.classList.remove("active");

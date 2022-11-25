@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import { MoveContext } from "../context/MoveContext";
 
 const TagSearchBar = () => {
-  const { setKeyword } = useContext(MoveContext);
+  const { setKeyword, setData } = useContext(MoveContext);
 
   const onKeyDown = (e) => {
     if (e.keyCode === 13) {
+      setData(null);
       setKeyword(e.target.value);
     }
   };

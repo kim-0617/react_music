@@ -9,6 +9,7 @@ import artistDetail from "../utils/artistDetail.json";
 const ArtistView = () => {
   const { name } = useParams();
   const [detail, setDetail] = useState(null);
+  const [songs, setSongs] = useState(null);
   const [url, setUrl] = useState(
     `https://www.youtube.com/watch?v=${window.location.search.replace(
       "?&id=",
@@ -33,13 +34,16 @@ const ArtistView = () => {
         setText(
           `${response.data.result.title} - ${response.data.result.artists[0].name}`
         );
+        setSongs(response.data.result.songs.slice(0, 5));
       })
       .catch(function (error) {
         console.log(error);
       });
   }, [name]);
 
-  if (!detail) return <Loader />;
+  if (!detail || !songs) return <Loader />;
+  // console.log(songs, songs?.length);
+
   return (
     <UrlContext.Provider value={{ setUrl, setText }}>
       <section id="artist__view">
@@ -59,7 +63,7 @@ const ArtistView = () => {
               </div>
               <div className="cont__sub">
                 <ViewSlider
-                  songs={detail.songs}
+                  songs={songs}
                   id={window.location.search.replace("?&id=", "")}
                 />
               </div>

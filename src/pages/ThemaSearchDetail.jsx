@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { ThemaDetailConts } from "../components";
-import { DataContext } from "../context/DataContext";
+import { Loader, ThemaDetailConts } from "../components";
 import themaSearchDetail from "../utils/themaSearchDetail.json";
 
 const ThemaSearchDetail = () => {
@@ -10,18 +9,17 @@ const ThemaSearchDetail = () => {
   const query = window.location.search.split("&");
   const src = query[0].replace("?src=", "");
   const title = decodeURI(query[1].replace("%20", " "));
+  const [data, setData] = useState(null);
 
-  const [data, setData] = useState();
   useEffect(() => {
     const config = {
       method: "get",
-      url: `https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${name}&part=snippet&maxResults=10`,
+      url: `https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${name}&part=snippet`,
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };
-
     axios(config)
       .then(function (response) {
         setData(response.data);
@@ -31,33 +29,32 @@ const ThemaSearchDetail = () => {
       });
   }, []);
 
+  if (!data) return <Loader />;
   return (
-    <DataContext.Provider value={data}>
-      <section id="thema__search__detail">
-        <div className="thema__search__detail__top">
-          <div className="thema__search__detail__top__inner container">
-            <img src={src} alt={name} />
-            <h2>
-              <p className="main__title">
-                MD 추천 테마 <span>BGM</span>
-              </p>
-              <p className="sub__title">
-                <span>{title}</span>
-              </p>
-            </h2>
+    <section id="thema__search__detail">
+      <div className="thema__search__detail__top">
+        <div className="thema__search__detail__top__inner container">
+          <img src={src} alt={name} />
+          <h2>
+            <p className="main__title">
+              MD 추천 테마 <span>BGM</span>
+            </p>
+            <p className="sub__title">
+              <span>{title}</span>
+            </p>
+          </h2>
+        </div>
+      </div>
+      <div className="thema__search__detail__inner container">
+        <div className="volume">
+          <div className="bar">
+            <div className="bar__btn"></div>
           </div>
         </div>
-        <div className="thema__search__detail__inner container">
-          <div className="volume">
-            <div className="bar">
-              <div className="bar__btn"></div>
-            </div>
-          </div>
 
-          <ThemaDetailConts data={data} />
-        </div>
-      </section>
-    </DataContext.Provider>
+        <ThemaDetailConts data={data} />
+      </div>
+    </section>
   );
 };
 

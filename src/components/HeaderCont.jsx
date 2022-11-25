@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const singers = [
   "임재범",
@@ -41,30 +41,30 @@ const HeaderCont = () => {
       <div className="header__wrap">
         <div className="header__left">
           <div className="logo">
-            <Link to="/">
+            <NavLink to="/">
               <em className="logo__color">M</em>USI
               <em className="logo__color">C</em>
               Pl<em className="logo__color">a</em>yI
               <em className="logo__color">n</em>g
-            </Link>
+            </NavLink>
           </div>
         </div>
         <div className="header__right">
           <ul>
             <li>
-              <Link to="/tagSearch/분위기">
+              <NavLink to="/tagSearch/분위기">
                 <em className="menu__color">태그</em> 검색
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/themaSearch">
+              <NavLink to="/themaSearch">
                 <em className="menu__color">테마</em> 찾기
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={`/artistSearch/${recomSingers[0]}`}>
+              <NavLink to={`/artistSearch/${recomSingers[0]}`}>
                 <em className="menu__color">아티스트</em> 검색
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

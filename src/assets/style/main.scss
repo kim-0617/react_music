@@ -280,8 +280,22 @@
         margin-top: 30px;
         margin-left: 15px;
 
-        span {
+        .title {
+          width: 60%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: block;
+          box-sizing: border-box;
+        }
+        .desc {
+          display: inline-block;
+          width: 30%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
           color: var(--main-color);
+          box-sizing: border-box;
         }
       }
     }

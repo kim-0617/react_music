@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import themaSearchConts from "../utils/themaSearchConts.json";
 import { Loader } from ".";
+import themaSearchConts from "../utils/themaSearchConts.json";
 
 const ThemaSearchConts = ({ list }) => {
   const [data, setData] = useState(null);
@@ -10,9 +10,9 @@ const ThemaSearchConts = ({ list }) => {
   useEffect(() => {
     const config = {
       method: "get",
-      url: `https://youtube-v31.p.rapidapi.com/playlists?id=${list}&part=snippet`,
+      url: `https://youtube-v31.p.rapidapi.com/playlists?id=${list}&part=snippet&maxResult=5`,
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY2,
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };

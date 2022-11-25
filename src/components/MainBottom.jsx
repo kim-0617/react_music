@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TagBox from "./TagBox";
 import fetchAPI from "../utils/fetchAPI";
-import { Link } from "react-router-dom";
 import chart from "../utils/chart50.json";
 
 const MainBottom = () => {
@@ -10,7 +9,7 @@ const MainBottom = () => {
   useEffect(() => {
     const fetchResults = async () => {
       const data = await fetchAPI(
-        "playlistItems?playlistId=PL4fGSI1pDJn6jXS_Tv_N9B8Z0HTRVJE0m&part=snippet"
+        "playlistItems?playlistId=PL4fGSI1pDJn6jXS_Tv_N9B8Z0HTRVJE0m&part=snippet&maxResults=10"
       );
       setVideos(data.items);
     };
@@ -25,12 +24,13 @@ const MainBottom = () => {
   };
 
   if (videos?.length === 0 || !videos) return null;
+
   return (
     <section id="top__music">
       <div className="container">
         <div className="top__title">
           <div className="top__left">
-            MUSIC <em>TOP</em> 10
+            MUSIC <em>TOP</em> 5
           </div>
           <div className="top__rigth">
             <img src="./assets/img/record.png" alt="top msuic" />
@@ -41,16 +41,18 @@ const MainBottom = () => {
           <h2>Music List</h2>
           <div className="tag__music">
             {videos.length &&
-              videos.map((video, index) => (
-                <TagBox key={video.id} video={video} index={index} />
-              ))}
+              videos
+                .slice(0, 5)
+                .map((video, index) => (
+                  <TagBox key={video.id} video={video} index={index} />
+                ))}
           </div>
         </div>
         {/* // cont */}
         <div className="add__link">
-          <Link to="/" onClick={onClickMore}>
+          {/* <Link to="/" onClick={onClickMore}>
             더보기
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
