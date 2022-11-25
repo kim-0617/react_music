@@ -2,19 +2,20 @@ import React, { useEffect, useState } from "react";
 import TagBox from "./TagBox";
 import fetchAPI from "../utils/fetchAPI";
 import chart from "../utils/chart50.json";
+import Loader from "./Loader";
 
 const MainBottom = () => {
-  const [videos, setVideos] = useState(null);
+  const [videos, setVideos] = useState(chart.items);
 
-  useEffect(() => {
-    const fetchResults = async () => {
-      const data = await fetchAPI(
-        "playlistItems?playlistId=PL4fGSI1pDJn6jXS_Tv_N9B8Z0HTRVJE0m&part=snippet&maxResults=10"
-      );
-      setVideos(data.items);
-    };
-    fetchResults();
-  }, []);
+  // useEffect(() => {
+  //   const fetchResults = async () => {
+  //     const data = await fetchAPI(
+  //       "playlistItems?playlistId=PL4fGSI1pDJn6jXS_Tv_N9B8Z0HTRVJE0m&part=snippet&maxResults=10"
+  //     );
+  //     setVideos(data.items);
+  //   };
+  //   fetchResults();
+  // }, []);
 
   const onClickMore = (e) => {
     document
@@ -23,7 +24,7 @@ const MainBottom = () => {
     e.target.style.display = "none";
   };
 
-  if (videos?.length === 0 || !videos) return null;
+  if (videos?.length === 0 || !videos) return <Loader />;
 
   return (
     <section id="top__music">

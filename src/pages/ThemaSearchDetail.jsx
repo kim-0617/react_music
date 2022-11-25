@@ -13,6 +13,20 @@ const ThemaSearchDetail = () => {
   const [volume, setVolume] = useState(50);
 
   useEffect(() => {
+    document
+      .querySelectorAll(".header__right li")[2]
+      .querySelector("a")
+      .classList.remove("active");
+
+    document
+      .querySelectorAll(".header__right li")[0]
+      .querySelector("a")
+      .classList.remove("active");
+
+    document
+      .querySelectorAll(".header__right li")[1]
+      .querySelector("a")
+      .classList.add("active");
     const config = {
       method: "get",
       url: `https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${name}&part=snippet`,

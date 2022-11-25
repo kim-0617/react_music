@@ -113,7 +113,6 @@ function ThemaDetailMusic({ detail, index, volume }) {
     //     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
     //   },
     // };
-
     // axios(config)
     //   .then(function (response) {
     //     setData(response.data.items[0]);
@@ -121,15 +120,16 @@ function ThemaDetailMusic({ detail, index, volume }) {
     //   .catch(function (error) {
     //     console.log(error);
     //   });
+
     const config = {
       method: "get",
-      url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet,statistics&id=${detail.snippet.resourceId.videoId}`,
+      url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${detail.snippet.resourceId.videoId}`,
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+        // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY2,
+        "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };
-
     const axiosResult = async () => {
       const response = await axios(config);
       return response;
@@ -139,7 +139,7 @@ function ThemaDetailMusic({ detail, index, volume }) {
       .catch((err) =>
         console.log("아 못받아오네", detail.snippet.resourceId.videoId, err)
       );
-  }, []);
+  }, [detail.id]);
 
   if (!data) return null;
 

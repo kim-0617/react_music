@@ -1,10 +1,11 @@
+import { useEffect } from "react";
 import { ThemaSearchConts, RecomThema } from "../components";
 
 // 위에 5개 추천 리스트
 const listID = [
   "PLq2M9qxAw5GU2hYm-UYxCVgoI3JBTjYOs", // 2000년대 댄스곡
   "PLXmABVtw_j6cchM2Yg4cjo68t8LTGmfA4", // 팝송
-  "PLmxVF8ick5cT0AH_EJhmXHfh68tlyx_vF", // 킬링보이스
+  "PLCzi3FapEEFBdR4uPk8zxyMFllsUpAMiz", // 킬링벌스
   "PLmxVF8ick5cSdoEdME6wEjJDLs4XWSV2Z", // 세로라이브
   "PLy9hrh1CH_7RHTwARgga_mAr-7Duaqb7v", // 발라드 명곡
 ];
@@ -22,6 +23,23 @@ const themaList = [
 ];
 
 const ThemaSearch = () => {
+  useEffect(() => {
+    document
+      .querySelectorAll(".header__right li")[2]
+      .querySelector("a")
+      .classList.remove("active");
+
+    document
+      .querySelectorAll(".header__right li")[0]
+      .querySelector("a")
+      .classList.remove("active");
+
+    document
+      .querySelectorAll(".header__right li")[1]
+      .querySelector("a")
+      .classList.add("active");
+  }, []);
+
   return (
     <section id="thema__search">
       <div className="thema__inner container">

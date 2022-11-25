@@ -12,6 +12,21 @@ const TagSearch = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
+    document
+      .querySelectorAll(".header__right li")[1]
+      .querySelector("a")
+      .classList.remove("active");
+
+    document
+      .querySelectorAll(".header__right li")[2]
+      .querySelector("a")
+      .classList.remove("active");
+
+    document
+      .querySelectorAll(".header__right li")[0]
+      .querySelector("a")
+      .classList.add("active");
+
     const config = {
       method: "get",
       url: `https://youtube-music1.p.rapidapi.com/v2/search?query=${keyword}&maxResults=10`,

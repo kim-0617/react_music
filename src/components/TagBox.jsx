@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import axios from "axios";
 import Loader from "./Loader";
+import song from "../utils/song.json";
 
 export async function getDownUrl(videoID) {
   const config = {
@@ -19,10 +20,13 @@ export async function getDownUrl(videoID) {
 }
 
 function TagBox({ video, index }) {
-  const [info, setInfo] = useState(null);
+  const [info, setInfo] = useState(song.items[0]);
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(null);
+  const [bar, setBar] = useState(0);
+  const [playing, setPlaying] = useState(false);
   const videoID = video.snippet.resourceId.videoId;
+  const videoRef = useRef(null);
 
   const onClickDown = (e) => {
     e.preventDefault();
@@ -39,14 +43,36 @@ function TagBox({ video, index }) {
     );
   };
 
+  const onClickBar = (e) => {
+    let progressWidth = e.currentTarget.clientWidth; // 진행바 전체 길이
+    let clickedOffsetX = e.clientX - 280; // 진행바 기준으로 측정되는 X좌표
+    console.log("click", progressWidth, clickedOffsetX);
+    // console.log("click", (clickedOffsetX / progressWidth) * 100);
+    e.currentTarget.firstElementChild.style.width = `${
+      (clickedOffsetX / progressWidth) * 100
+    }%`;
+    setSec(
+      (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
+    );
+    forwardHandler(
+      (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
+    );
+  };
+
   const onReady = function () {
     document
       .querySelectorAll(".player")
       .forEach((frame) => (frame.style.left = "5px"));
   };
 
+  const forwardHandler = (time) => {
+    // console.log("ref호출", videoRef.current);
+    videoRef.current.seekTo(time);
+    setPlaying(true);
+  };
+
   const onProgress = (e) => {
-    setSec((prevState) => (prevState += 1));
+    setSec((prevState) => parseInt((prevState += 1)));
   };
 
   const onPlay = (e) => {
@@ -85,7 +111,7 @@ function TagBox({ video, index }) {
       url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${videoID}`,
       headers: {
         // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
-        "X-RapidAPI-Key": "45464e034emsh06e4b4a562fb65ep146392jsn535eb2dff4cc",
+        "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };
@@ -105,6 +131,7 @@ function TagBox({ video, index }) {
         <div className="duration__top">
           <img src="assets/img/start.svg" alt="start" className="start" />
           <ReactPlayer
+            ref={videoRef}
             className="player"
             url={`https://www.youtube.com/watch?v=${videoID}`}
             width={50}
@@ -115,10 +142,11 @@ function TagBox({ video, index }) {
             onPause={onPause}
             onReady={onReady}
             onEnded={onEnded}
+            playing={playing}
             style={{ left: "-500px", transition: "6000ms" }}
           />
 
-          <div className="progress">
+          <div className="progress" onClick={onClickBar}>
             <div className="bar" style={{ width: `${(sec / total) * 100}%` }}>
               <div className="bar__btn"></div>
             </div>
