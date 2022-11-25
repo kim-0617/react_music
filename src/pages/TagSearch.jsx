@@ -8,6 +8,7 @@ import axios from "axios";
 const TagSearch = () => {
   const [moving, setMoving] = useState(false);
   const [keyword, setKeyword] = useState("분위기");
+  const [volume, setVolume] = useState(50);
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -38,6 +39,13 @@ const TagSearch = () => {
       e.target.parentElement.classList.add("active");
       setMoving(false);
     }
+  };
+
+  const onClickVolume = (e) => {
+    let progressWidth = e.currentTarget.clientWidth; // 진행바 전체 길이
+    let clickedOffsetX = e.clientX - 135; // 진행바 기준으로 측정되는 X좌표
+
+    setVolume((clickedOffsetX / progressWidth) * 100);
   };
 
   if (!data) return <Loader />;
@@ -81,7 +89,7 @@ const TagSearch = () => {
 
             <ul className="tag__list__detail">
               <Routes>
-                <Route path="분위기/*" element={<Mood />} />
+                <Route path="분위기/*" element={<Mood value={"ho"} />} />
                 <Route path="테마/*" element={<Thema />} />
                 <Route path="템포/*" element={<Tempo />} />
                 <Route path="음악장르/*" element={<Genre />} />
@@ -93,8 +101,8 @@ const TagSearch = () => {
 
           <div className="search"></div>
 
-          <div className="volume">
-            <div className="bar">
+          <div className="volume" onClick={onClickVolume}>
+            <div className="bar" style={{ width: `${volume}%` }}>
               <div className="bar__btn"></div>
             </div>
           </div>
@@ -106,6 +114,7 @@ const TagSearch = () => {
                 keyword={keyword}
                 song={song}
                 index={index}
+                volume={volume}
               />
             ))}
           </div>

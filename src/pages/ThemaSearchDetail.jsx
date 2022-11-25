@@ -10,6 +10,7 @@ const ThemaSearchDetail = () => {
   const src = query[0].replace("?src=", "");
   const title = decodeURI(query[1].replace("%20", " "));
   const [data, setData] = useState(null);
+  const [volume, setVolume] = useState(50);
 
   useEffect(() => {
     const config = {
@@ -29,7 +30,15 @@ const ThemaSearchDetail = () => {
       });
   }, []);
 
+  const onClickVolume = (e) => {
+    let progressWidth = e.currentTarget.clientWidth; // 진행바 전체 길이
+    let clickedOffsetX = e.clientX - 135; // 진행바 기준으로 측정되는 X좌표
+
+    setVolume((clickedOffsetX / progressWidth) * 100);
+  };
+
   if (!data) return <Loader />;
+
   return (
     <section id="thema__search__detail">
       <div className="thema__search__detail__top">
@@ -46,13 +55,13 @@ const ThemaSearchDetail = () => {
         </div>
       </div>
       <div className="thema__search__detail__inner container">
-        <div className="volume">
-          <div className="bar">
+        <div className="volume" onClick={onClickVolume}>
+          <div className="bar" style={{ width: `${volume}%` }}>
             <div className="bar__btn"></div>
           </div>
         </div>
 
-        <ThemaDetailConts data={data} />
+        <ThemaDetailConts data={data} volume={volume} />
       </div>
     </section>
   );

@@ -43,7 +43,7 @@ function getTimeStringSeconds(seconds) {
   }
 }
 
-function ThemaDetailMusic({ detail, index }) {
+function ThemaDetailMusic({ detail, index, volume }) {
   const [data, setData] = useState(null);
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(null);
@@ -83,6 +83,16 @@ function ThemaDetailMusic({ detail, index }) {
     document
       .querySelectorAll(".start")
       [index].setAttribute("src", "../assets/img/playing.svg");
+  };
+
+  const onEnded = (e) => {
+    setSec(0);
+    document
+      .querySelectorAll(".start")
+      [index].setAttribute(
+        "src",
+        "https://raw.githubusercontent.com/kim-0617/react_music/124c9515d8cc5b4ccbb6d5f432bceb0c9ee82c50/src/assets/img/start.svg"
+      );
   };
 
   useEffect(() => {
@@ -149,6 +159,8 @@ function ThemaDetailMusic({ detail, index }) {
             onPause={onPause}
             onPlay={onPlay}
             onReady={onReady}
+            onEnded={onEnded}
+            volume={volume / 100}
             style={{ left: "-500px", transition: "6000ms" }}
           />
           <div className="progress">

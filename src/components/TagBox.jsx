@@ -55,6 +55,13 @@ function TagBox({ video, index }) {
       [index].setAttribute("src", "../assets/img/playing.svg");
   };
 
+  const onEnded = (e) => {
+    setSec(0);
+    document
+      .querySelectorAll(".start")
+      [index].setAttribute("src", "../assets/img/start.svg");
+  };
+
   const onPause = (e) => {
     document
       .querySelectorAll(".start")
@@ -106,6 +113,7 @@ function TagBox({ video, index }) {
             onPlay={onPlay}
             onPause={onPause}
             onReady={onReady}
+            onEnded={onEnded}
             style={{ left: "-500px", transition: "6000ms" }}
           />
 

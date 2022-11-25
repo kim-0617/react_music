@@ -22,7 +22,7 @@ function getTimeStringSeconds(seconds) {
   }
 }
 
-function TagSearchBox({ keyword, song, index }) {
+function TagSearchBox({ keyword, song, index, volume }) {
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(1);
 
@@ -34,7 +34,7 @@ function TagSearchBox({ keyword, song, index }) {
   const onReady = function () {
     document
       .querySelectorAll(".player")
-      .forEach((frame) => (frame.style.left = "5px"));
+      .forEach((frame) => (frame.style.left = "10px"));
   };
 
   useEffect(() => {
@@ -78,7 +78,17 @@ function TagSearchBox({ keyword, song, index }) {
       );
   };
 
-  if (!song) return <Loader />;
+  const onEnded = (e) => {
+    setSec(0);
+    document
+      .querySelectorAll(".start")
+      [index].setAttribute(
+        "src",
+        "https://raw.githubusercontent.com/kim-0617/react_music/124c9515d8cc5b4ccbb6d5f432bceb0c9ee82c50/src/assets/img/start.svg"
+      );
+  };
+
+  // if (!song) return <Loader />;
 
   return (
     <>
@@ -102,6 +112,8 @@ function TagSearchBox({ keyword, song, index }) {
               onPause={onPause}
               onPlay={onPlay}
               onReady={onReady}
+              volume={volume / 100}
+              onEnded={onEnded}
               style={{ left: "-500px", transition: "6000ms" }}
             />
             <div className="progress">

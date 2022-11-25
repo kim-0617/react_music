@@ -13,13 +13,12 @@ const moodList = [
   "웅장한",
   "발랄한",
 ];
-function Mood() {
+function Mood({ value }) {
   const { setMoving, setKeyword, setData } = useContext(MoveContext);
-
   const onActive = (e) => {
     if (e.target.tagName === "A") {
       setMoving(true);
-      setData(null);
+      // setData(null);
       setKeyword(e.target.textContent.replace("# ", "").concat("분위기"));
       [...e.currentTarget.parentElement.children].forEach((li, index) => {
         li.classList.remove("active");

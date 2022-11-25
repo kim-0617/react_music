@@ -9,7 +9,7 @@ function Thema() {
   const onActive = (e) => {
     if (e.target.tagName === "A") {
       setMoving(true);
-      setData(null);
+      // setData(null);
       setKeyword(e.target.textContent.replace("# ", "").concat("테마"));
       [...e.currentTarget.parentElement.children].forEach((li, index) => {
         li.classList.remove("active");
