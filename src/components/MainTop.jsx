@@ -16,6 +16,7 @@ const MainTop = () => {
 
   useEffect(() => {
     let headersList = {
+      // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
       "X-RapidAPI-Key": "7912914007msh898956536fa7e61p1eabc1jsn965ed895d49f",
       "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
       Accept: "*/*",

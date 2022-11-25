@@ -16,7 +16,8 @@ function RecomThema({ id }) {
         part: "snippet",
       },
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
+        "X-RapidAPI-Key": "45464e034emsh06e4b4a562fb65ep146392jsn535eb2dff4cc",
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };

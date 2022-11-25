@@ -23,7 +23,8 @@ const ArtistView = () => {
       method: "get",
       url: `https://youtube-music1.p.rapidapi.com/v2/get_album?album_id=${name}`,
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+        "X-RapidAPI-Key": "7912914007msh898956536fa7e61p1eabc1jsn965ed895d49f",
+        // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
         "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
       },
     };
