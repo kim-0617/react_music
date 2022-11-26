@@ -166,7 +166,7 @@ function TagSearchBox({ keyword, song, index, volume }) {
         <div className="tag__tags">
           <ul>
             <li>
-              <Link to={`/tagSearch/${keyword}`}># {keyword}</Link>
+              <Link to={`/tagSearch/${keyword}`}># {decodeURI(keyword)}</Link>
             </li>
           </ul>
         </div>

@@ -13,7 +13,7 @@ const ThemaSearchConts = ({ list }) => {
       url: `https://youtube-v31.p.rapidapi.com/playlists?id=${list}&part=snippet&maxResult=5`,
       headers: {
         // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY2,
-        "X-RapidAPI-Key": "7912914007msh898956536fa7e61p1eabc1jsn965ed895d49f",
+        "X-RapidAPI-Key": "7c4e5fb227mshf629ecb9207f84cp10864cjsnec505eb64f44",
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };

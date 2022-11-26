@@ -52,7 +52,7 @@ const HeaderCont = () => {
         <div className="header__right">
           <ul>
             <li>
-              <NavLink to="/tagSearch/분위기">
+              <NavLink to="/tagSearch/분위기?click=분위기">
                 <em className="menu__color">태그</em> 검색
               </NavLink>
             </li>

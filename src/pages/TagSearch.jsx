@@ -7,7 +7,7 @@ import axios from "axios";
 
 const TagSearch = () => {
   const [moving, setMoving] = useState(false);
-  const [keyword, setKeyword] = useState(decodeURI(window.location.pathname.replace('/tagSearch/', '')).replace('분위기', ''));
+  const [keyword, setKeyword] = useState(decodeURI(window.location.pathname.replace('/tagSearch/', '')).replace('분위기', '') + window.location.search.replace('?click=', ''));
   const [volume, setVolume] = useState(50);
   const [data, setData] = useState(null);
 
@@ -36,14 +36,14 @@ const TagSearch = () => {
       url: `https://youtube-music1.p.rapidapi.com/v2/search?query=${keyword}&maxResults=10`,
       headers: {
         // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
-        "X-RapidAPI-Key": "45464e034emsh06e4b4a562fb65ep146392jsn535eb2dff4cc",
+        "X-RapidAPI-Key": "99537b4135msh872cdd3d69a7615p12863djsn27ae508efff7",
         "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
       },
     };
 
     axios(config)
       .then(function (response) {
-        setData(response.data.result.songs);
+        setData(response?.data?.result?.songs);
       })
       .catch(function (error) {
         console.log(error);
