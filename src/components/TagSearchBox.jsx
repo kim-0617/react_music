@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
-import Loader from "./Loader";
 import { getDownUrl } from "./TagBox";
+import Loader from "./Loader";
 
 function getTimeStringSeconds(seconds) {
   let hour, min, sec;

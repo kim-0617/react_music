@@ -7,7 +7,7 @@ import axios from "axios";
 
 const TagSearch = () => {
   const [moving, setMoving] = useState(false);
-  const [keyword, setKeyword] = useState("분위기");
+  const [keyword, setKeyword] = useState(decodeURI(window.location.pathname.replace('/tagSearch/', '')).replace('분위기', ''));
   const [volume, setVolume] = useState(50);
   const [data, setData] = useState(null);
 
@@ -26,6 +26,10 @@ const TagSearch = () => {
       .querySelectorAll(".header__right li")[0]
       .querySelector("a")
       .classList.add("active");
+
+    document
+      ?.querySelector("#tag__search > div > div.tag__search > ul.tag__list > li")
+      ?.classList.add("active");
 
     const config = {
       method: "get",

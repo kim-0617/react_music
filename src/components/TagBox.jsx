@@ -10,7 +10,7 @@ export async function getDownUrl(videoID) {
     method: "get",
     url: `https://youtube-music1.p.rapidapi.com/get_download_url?id=${videoID}&ext=mp3`,
     headers: {
-      "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
+      "X-RapidAPI-Key": "45464e034emsh06e4b4a562fb65ep146392jsn535eb2dff4cc",
       "X-RapidAPI-Host": "youtube-music1.p.rapidapi.com",
     },
   };
@@ -25,7 +25,6 @@ function TagBox({ video, index }) {
   const [total, setTotal] = useState(null);
   const videoRef = useRef(null);
   const videoID = video.snippet.resourceId.videoId;
-  console.log(videoID)
 
   const onClickDown = (e) => {
     e.preventDefault();
@@ -109,7 +108,7 @@ function TagBox({ video, index }) {
       url: `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails,snippet&id=${videoID}`,
       headers: {
         // "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY3,
-        "X-RapidAPI-Key": "a1683076ebmsh2576547ca49e7fap19edfbjsnc3ec1e8a9602",
+        "X-RapidAPI-Key": "45464e034emsh06e4b4a562fb65ep146392jsn535eb2dff4cc",
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     };
@@ -170,7 +169,7 @@ function TagBox({ video, index }) {
         <ul>
           {info?.snippet?.tags?.slice(0, 4).map((tag, index) => (
             <li key={tag}>
-              <Link to="/">{"#" + tag}</Link>
+              <Link to={`/tagSearch/분위기/${tag}`}>{"#" + tag}</Link>
             </li>
           ))}
         </ul>

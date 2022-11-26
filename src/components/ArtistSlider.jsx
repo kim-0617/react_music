@@ -5,7 +5,7 @@ function ArtistSlider({ data }) {
   return (
     <>
       <Link to={`/artistSearch/${data}`}>
-        <img src={`../assets/img/singer/${data}.jpg`} alt={data} />
+        <img src={`../assets/img/singer/${data}.png`} alt={data} />
         <p className="slider__title">{data}</p>
       </Link>
     </>
