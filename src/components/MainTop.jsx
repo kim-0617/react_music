@@ -1,17 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 import { getDownUrl } from "./TagBox";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Loader from "./Loader";
+
+const candidate = [
+  "버즈",
+  "VOS",
+  "SG워너비",
+  "씨야",
+  "가비앤제이",
+  "다비치",
+]
 
 const MainTop = () => {
   const [video, setVideo] = useState(null);
   const [sec, setSec] = useState(0);
   const [total, setTotal] = useState(null);
+  const videoRef = useRef(null);
 
   const onClickDown = (e) => {
     e.preventDefault();
     getDownUrl(video.id).then((result) => (window.location.href = result));
+  };
+
+  const onClickBar = (e) => {
+    let progressWidth = e.currentTarget.clientWidth; // 진행바 전체 길이
+    let clickedOffsetX = e.nativeEvent.offsetX; // 진행바 기준으로 측정되는 X좌표
+    // console.log("click", progressWidth, clickedOffsetX);
+    // console.log("click", (clickedOffsetX / progressWidth) * 100);
+    e.currentTarget.firstElementChild.style.width = `${(clickedOffsetX / progressWidth) * 100
+      }%`;
+    setSec(
+      (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
+    );
+    forwardHandler(
+      (total * parseInt(e.currentTarget.firstElementChild.style.width)) / 100
+    );
+    videoRef.current.player.isPlaying = true;
+  };
+
+  const forwardHandler = (time) => {
+    // console.log("ref호출", videoRef.current);
+    videoRef.current.seekTo(time);
   };
 
   useEffect(() => {
@@ -23,7 +55,7 @@ const MainTop = () => {
     };
 
     let reqOptions = {
-      url: "https://youtube-music1.p.rapidapi.com/v2/search?query=버즈&part=snippet&maxResults=1",
+      url: `https://youtube-music1.p.rapidapi.com/v2/search?query=${candidate[Math.floor(Math.random() * candidate.length)]}&part=snippet&maxResults=1`,
       method: "GET",
       headers: headersList,
     };
@@ -61,7 +93,8 @@ const MainTop = () => {
     );
   };
 
-  if (!video) return null;
+  if (!video) return <Loader />;
+
   return (
     <section id="youtube__recom">
       <div className="container">
@@ -74,6 +107,7 @@ const MainTop = () => {
         <div className="main__youtube__music">
           <div className="player__left">
             <ReactPlayer
+              ref={videoRef}
               url={`https://www.youtube.com/watch?v=${video.id}`}
               width={700}
               height={400}
@@ -101,7 +135,7 @@ const MainTop = () => {
                 <i title="stop" className="stop" id="stop"></i>
               </div>
               <div className="progress__box">
-                <div className="progress">
+                <div className="progress" onClick={onClickBar}>
                   <div
                     className="bar"
                     style={{ width: `${(sec / total) * 100}%` }}
