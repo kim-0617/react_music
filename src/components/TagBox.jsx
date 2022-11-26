@@ -28,7 +28,9 @@ function TagBox({ video, index }) {
 
   const onClickDown = (e) => {
     e.preventDefault();
-    getDownUrl(videoID).then((result) => (window.location.href = result));
+    getDownUrl(videoID).then((result) => {
+      window.location.href = result;
+    });
   };
 
   const onClickPlayer = (e) => {
